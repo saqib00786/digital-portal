@@ -7,15 +7,15 @@ import {
   Image,
   TouchableOpacity,
 } from "react-native";
-import { data } from "../../../res/data";
+import { educationData } from "../../../res/data";
 import {
   COLOR_BLACK,
   COLOR_BLUE,
   COLOR_LIGHT_BLUE,
 } from "../../../res/drawables";
 
-const Main = (props) => {
-  let arr = data.map(function (d) {
+const Education = (props) => {
+  let arr = educationData.map(function (d) {
     console.log(d);
     return d;
   });
@@ -27,13 +27,14 @@ const Main = (props) => {
         margin: 4,
         padding: 15,
         marginTop: 18,
-        width: "31%",
-        borderRadius: 18,
-        alignSelf: "flex-end",
+        width: "98%",
+        borderRadius: 15,
       }}
     >
       <TouchableOpacity
-        onPress={() => props.navigation.navigate(item.source)}
+        onPress={() =>
+          props.navigation.navigate("WebViewScreen", { link: item.uri })
+        }
         //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
         <Image
@@ -66,11 +67,11 @@ const Main = (props) => {
           alignSelf: "center",
         }}
       >
-        WELCOME TO DIGITAL SERVICES PORTAL
+        WELCOME TO Education PAGE.
       </Text>
       <FlatList
         data={arr}
-        numColumns={3}
+        //numColumns={3}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
@@ -78,7 +79,7 @@ const Main = (props) => {
   );
 };
 
-export default Main;
+export default Education;
 const styles = StyleSheet.create({
   container: {
     flex: 1,

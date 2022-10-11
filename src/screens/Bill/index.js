@@ -67,7 +67,7 @@ const Bill = (props) => {
           alignSelf: "center",
         }}
       >
-        WELCOME TO BILL PAGE!
+        WELCOME TO BILL PAGE.
       </Text>
       <FlatList
         data={arr}

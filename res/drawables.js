@@ -22,4 +22,14 @@ export const COURIER_LOGO = require(PATH + "/courier.png");
 
 //BILL SCREEN LOGOS
 export const SUI_GAS_LOGO = require(PATH + "/SuiGas.png");
-//export const SUI_GAS_LINK = (source ( uri: "https://reactnative.dev/" ));
+export const PTCL_LOGO = require(PATH + "/ptcl.png");
+
+//FORCES SCREEN LOGOS
+export const ARMY_LOGO = require(PATH + "/army.png");
+export const AIRFORCE_LOGO = require(PATH + "/airforce.png");
+export const NAVY_LOGO = require(PATH + "/navy.png");
+
+//EDUCATION SCREEN LOGOS
+export const PPSC_LOGO = require(PATH + "/ppsc.png");
+export const FPSC_LOGO = require(PATH + "/fpsc.png");
+export const HEC_LOGO = require(PATH + "/hec.png");

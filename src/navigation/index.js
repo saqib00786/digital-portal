@@ -7,6 +7,8 @@ import { COLOR_BLUE, COLOR_WHITE } from "../../res/drawables";
 import Job from "../screens/Job";
 import Bill from "../screens/Bill";
 import WebViewScreen from "../screens/WebViewScreen";
+import Forces from "../screens/Forces";
+import Education from "../screens/Education";
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +53,36 @@ function Navigation() {
         <Stack.Screen
           name="Bill"
           component={Bill}
+          options={{
+            headerTitleStyle: {
+              color: COLOR_WHITE,
+              fontFamily: "serif",
+              fontWeight: "bold",
+            },
+            headerStyle: {
+              backgroundColor: COLOR_BLUE,
+            },
+            headerTintColor: COLOR_WHITE,
+          }}
+        />
+        <Stack.Screen
+          name="Forces"
+          component={Forces}
+          options={{
+            headerTitleStyle: {
+              color: COLOR_WHITE,
+              fontFamily: "serif",
+              fontWeight: "bold",
+            },
+            headerStyle: {
+              backgroundColor: COLOR_BLUE,
+            },
+            headerTintColor: COLOR_WHITE,
+          }}
+        />
+        <Stack.Screen
+          name="Education"
+          component={Education}
           options={{
             headerTitleStyle: {
               color: COLOR_WHITE,
