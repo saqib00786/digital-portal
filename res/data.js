@@ -2,9 +2,11 @@ import {
   AIRFORCE_LOGO,
   ARMY_LOGO,
   BILL_LOGO,
+  BISE_RWP_LOGO,
   COURIER_LOGO,
   DRIVING_LOGO,
   EDUCATION_LOGO,
+  FBISE_LOGO,
   FORCES_LOGO,
   FPSC_LOGO,
   HEC_LOGO,
@@ -21,14 +23,24 @@ import {
 //MAIN SCREEN DATA
 export const data = [
   {
+    services: "EDUCATION",
+    img: EDUCATION_LOGO,
+    source: "Education",
+  },
+  {
     services: "FORCES",
     img: FORCES_LOGO,
     source: "Forces",
   },
   {
-    services: "EDUCATION",
-    img: EDUCATION_LOGO,
-    source: "Education",
+    services: "DRIVING",
+    img: DRIVING_LOGO,
+    source: "",
+  },
+  {
+    services: "JOBS",
+    img: JOB_LOGO,
+    source: "Job",
   },
   {
     services: "BILL",
@@ -37,24 +49,8 @@ export const data = [
   },
 
   {
-    services: "JOBS",
-    img: JOB_LOGO,
-    source: "Job",
-  },
-
-  {
-    services: "DRIVING",
-    img: DRIVING_LOGO,
-    source: "",
-  },
-  {
     services: "COURIER",
     img: COURIER_LOGO,
-    source: "",
-  },
-  {
-    services: "VISA",
-    img: VISA_LOGO,
     source: "",
   },
   {
@@ -62,6 +58,12 @@ export const data = [
     img: NADRA_LOGO,
     source: "",
   },
+  {
+    services: "VISA",
+    img: VISA_LOGO,
+    source: "",
+  },
+
   {
     services: "HELPLINE",
     img: HELPLINE_LOGO,
@@ -110,6 +112,25 @@ export const forcesData = [
 //EDUCATION SCREEN DATA
 export const educationData = [
   {
+    services: "BISE_RWP",
+    img: BISE_RWP_LOGO,
+    uri: "https://www.biserawalpindi.edu.pk/",
+  },
+  {
+    services: "FBISE",
+    img: FBISE_LOGO,
+    uri: "https://fbise.edu.pk/",
+  },
+  {
+    services: "HEC",
+    img: HEC_LOGO,
+    uri: "https://www.hec.gov.pk/",
+  },
+];
+
+//JOB SCREEN DATA
+export const jobData = [
+  {
     services: "PPSC",
     img: PPSC_LOGO,
     uri: "https://ppsc.gop.pk/",
@@ -118,10 +139,5 @@ export const educationData = [
     services: "FPSC",
     img: FPSC_LOGO,
     uri: "https://www.fpsc.gov.pk/",
-  },
-  {
-    services: "HEC",
-    img: HEC_LOGO,
-    uri: "https://www.hec.gov.pk/",
   },
 ];

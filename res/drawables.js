@@ -30,6 +30,10 @@ export const AIRFORCE_LOGO = require(PATH + "/airforce.png");
 export const NAVY_LOGO = require(PATH + "/navy.png");
 
 //EDUCATION SCREEN LOGOS
+export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
+export const FBISE_LOGO = require(PATH + "/fbise.png");
+export const HEC_LOGO = require(PATH + "/hec.png");
+
+//JOB SCREEN LOGOS
 export const PPSC_LOGO = require(PATH + "/ppsc.png");
 export const FPSC_LOGO = require(PATH + "/fpsc.png");
-export const HEC_LOGO = require(PATH + "/hec.png");
