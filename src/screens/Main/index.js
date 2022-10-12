@@ -33,7 +33,10 @@ const Main = (props) => {
       }}
     >
       <TouchableOpacity
-        onPress={() => props.navigation.navigate(item.source)}
+        onPress={() =>
+          props.navigation.navigate("General", { title: item.source })
+        }
+        //onPress={() => props.navigation.navigate(item.source)}
         //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
         <Image

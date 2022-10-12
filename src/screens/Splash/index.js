@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Image, StyleSheet, View, Text } from "react-native";
 import {
   BACKGROUND_COLOR,
@@ -6,11 +6,23 @@ import {
   COLOR_GRAY,
   SPLASH_LOGO,
 } from "../../../res/drawables";
+import NetInfo from "@react-native-community/netinfo";
 
 const Splash = (props) => {
-  setTimeout(() => {
-    props.navigation.replace("Main");
-  }, 3000);
+  useEffect(() => {
+    NetInfo.fetch().then((state) => {
+      console.log("Connection type", state.type);
+      console.log("Is connected?", state.isConnected);
+      setTimeout(function () {
+        if (state.isConnected) {
+          props.navigation.replace("Main");
+        } else {
+          props.navigation.navigate("NetworkErrorScreen");
+        }
+      }, 5000);
+    });
+  }, []);
+
   return (
     <View style={styles.container}>
       <Image source={SPLASH_LOGO} style={styles.img} />

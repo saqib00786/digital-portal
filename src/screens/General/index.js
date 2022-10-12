@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -7,18 +7,52 @@ import {
   Image,
   TouchableOpacity,
 } from "react-native";
-import { jobData } from "../../../res/data";
+import {
+  billData,
+  jobData,
+  forcesData,
+  educationData,
+} from "../../../res/data";
 import {
   COLOR_BLACK,
   COLOR_BLUE,
   COLOR_LIGHT_BLUE,
 } from "../../../res/drawables";
 
-const Job = (props) => {
-  let arr = jobData.map(function (d) {
-    console.log(d);
-    return d;
-  });
+const General = (props) => {
+  const { title } = props.route.params;
+  const [newArr, setArr] = useState([]);
+  useEffect(() => {
+    returnData();
+  }, []);
+
+  const returnData = () => {
+    let arr = [];
+    if (title == "Education") {
+      arr = educationData.map(function (d) {
+        console.log(d);
+        return d;
+      });
+    } else if (title == "Forces") {
+      arr = forcesData.map(function (d) {
+        console.log(d);
+        return d;
+      });
+    } else if (title == "Bill") {
+      arr = billData.map(function (d) {
+        console.log(d);
+        return d;
+      });
+    } else if (title == "Job") {
+      arr = jobData.map(function (d) {
+        console.log(d);
+        return d;
+      });
+    } else {
+      return 0;
+    }
+    setArr(arr);
+  };
 
   const renderItem = ({ item }) => (
     <View
@@ -67,10 +101,10 @@ const Job = (props) => {
           alignSelf: "center",
         }}
       >
-        WELCOME TO JOB PAGE.
+        Welcome To {title} Page.
       </Text>
       <FlatList
-        data={arr}
+        data={newArr}
         //numColumns={3}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
@@ -79,7 +113,7 @@ const Job = (props) => {
   );
 };
 
-export default Job;
+export default General;
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -4,11 +4,9 @@ import React from "react";
 import Splash from "../screens/Splash";
 import Main from "../screens/Main";
 import { COLOR_BLUE, COLOR_WHITE } from "../../res/drawables";
-import Job from "../screens/Job";
-import Bill from "../screens/Bill";
 import WebViewScreen from "../screens/WebViewScreen";
-import Forces from "../screens/Forces";
-import Education from "../screens/Education";
+import General from "../screens/General";
+import NetworkErrorScreen from "../screens/NetworkErrorScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -36,8 +34,8 @@ function Navigation() {
           }}
         />
         <Stack.Screen
-          name="Job"
-          component={Job}
+          name="General"
+          component={General}
           options={{
             headerTitleStyle: {
               color: COLOR_WHITE,
@@ -50,54 +48,25 @@ function Navigation() {
             headerTintColor: COLOR_WHITE,
           }}
         />
-        <Stack.Screen
-          name="Bill"
-          component={Bill}
-          options={{
-            headerTitleStyle: {
-              color: COLOR_WHITE,
-              fontFamily: "serif",
-              fontWeight: "bold",
-            },
-            headerStyle: {
-              backgroundColor: COLOR_BLUE,
-            },
-            headerTintColor: COLOR_WHITE,
-          }}
-        />
-        <Stack.Screen
-          name="Forces"
-          component={Forces}
-          options={{
-            headerTitleStyle: {
-              color: COLOR_WHITE,
-              fontFamily: "serif",
-              fontWeight: "bold",
-            },
-            headerStyle: {
-              backgroundColor: COLOR_BLUE,
-            },
-            headerTintColor: COLOR_WHITE,
-          }}
-        />
-        <Stack.Screen
-          name="Education"
-          component={Education}
-          options={{
-            headerTitleStyle: {
-              color: COLOR_WHITE,
-              fontFamily: "serif",
-              fontWeight: "bold",
-            },
-            headerStyle: {
-              backgroundColor: COLOR_BLUE,
-            },
-            headerTintColor: COLOR_WHITE,
-          }}
-        />
+
         <Stack.Screen
           name="WebViewScreen"
           component={WebViewScreen}
+          options={{
+            headerTitleStyle: {
+              color: COLOR_WHITE,
+              fontFamily: "serif",
+              fontWeight: "bold",
+            },
+            headerStyle: {
+              backgroundColor: COLOR_BLUE,
+            },
+            headerTintColor: COLOR_WHITE,
+          }}
+        />
+        <Stack.Screen
+          name="NetworkErrorScreen"
+          component={NetworkErrorScreen}
           options={{
             headerTitleStyle: {
               color: COLOR_WHITE,
