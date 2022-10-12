@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, StyleSheet, View, LottieView } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { COLOR_WHITE } from "../../../res/drawables";
 import Lottie from "lottie-react-native";
 
@@ -21,10 +21,6 @@ const styles = StyleSheet.create({
     alignContent: "flex-end",
     justifyContent: "flex-end",
     backgroundColor: COLOR_WHITE,
-  },
-  logo: {
-    height: 150,
-    width: 200,
   },
 });
 export default NetworkErrorScreen;

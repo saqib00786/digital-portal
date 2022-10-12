@@ -65,19 +65,9 @@ function Navigation() {
           }}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           name="NetworkErrorScreen"
           component={NetworkErrorScreen}
-          options={{
-            headerTitleStyle: {
-              color: COLOR_WHITE,
-              fontFamily: "serif",
-              fontWeight: "bold",
-            },
-            headerStyle: {
-              backgroundColor: COLOR_BLUE,
-            },
-            headerTintColor: COLOR_WHITE,
-          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
