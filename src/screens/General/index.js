@@ -8,10 +8,12 @@ import {
   TouchableOpacity,
 } from "react-native";
 import {
-  billData,
   jobData,
   forcesData,
   educationData,
+  deliveryServicesData,
+  utilityServicesData,
+  govtInitiativesData,
 } from "../../../res/data";
 import {
   COLOR_BLACK,
@@ -38,13 +40,23 @@ const General = (props) => {
         console.log(d);
         return d;
       });
-    } else if (title == "Bill") {
-      arr = billData.map(function (d) {
+    } else if (title == "UtilityServices") {
+      arr = utilityServicesData.map(function (d) {
         console.log(d);
         return d;
       });
     } else if (title == "Job") {
       arr = jobData.map(function (d) {
+        console.log(d);
+        return d;
+      });
+    } else if (title == "DeliveryServices") {
+      arr = deliveryServicesData.map(function (d) {
+        console.log(d);
+        return d;
+      });
+    } else if (title == "GovernmentInitiatives") {
+      arr = govtInitiativesData.map(function (d) {
         console.log(d);
         return d;
       });
@@ -55,57 +67,24 @@ const General = (props) => {
   };
 
   const renderItem = ({ item }) => (
-    <View
-      style={{
-        backgroundColor: COLOR_LIGHT_BLUE,
-        margin: 4,
-        padding: 15,
-        marginTop: 18,
-        width: "98%",
-        borderRadius: 15,
-      }}
-    >
+    <View style={styles.renderItemView}>
       <TouchableOpacity
         onPress={() =>
           props.navigation.navigate("WebViewScreen", { link: item.uri })
         }
         //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
-        <Image
-          source={item.img}
-          style={{ width: 70, height: 70, alignSelf: "center" }}
-        />
-        <Text
-          style={{
-            fontSize: 12,
-            fontWeight: "bold",
-            fontFamily: "serif",
-            color: COLOR_BLACK,
-            alignSelf: "center",
-            marginTop: 10,
-          }}
-        >
-          {item.services}
-        </Text>
+        <Image source={item.img} style={styles.renderItemImage} />
+        <Text style={styles.renderItemText}>{item.services}</Text>
       </TouchableOpacity>
     </View>
   );
   return (
     <View style={styles.container}>
-      <Text
-        style={{
-          fontFamily: "sans-serif-light",
-          fontSize: 18,
-          fontWeight: "bold",
-          color: COLOR_BLUE,
-          alignSelf: "center",
-        }}
-      >
-        Welcome To {title} Page.
-      </Text>
+      <Text style={styles.text}>Welcome To {title} Page.</Text>
       <FlatList
         data={newArr}
-        //numColumns={3}
+        numColumns={2}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
@@ -120,5 +99,29 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     margin: 10,
     marginTop: "7%",
+  },
+  renderItemView: {
+    backgroundColor: COLOR_LIGHT_BLUE,
+    margin: 4,
+    padding: 15,
+    marginTop: 18,
+    width: "48%",
+    borderRadius: 15,
+  },
+  renderItemImage: { width: 70, height: 70, alignSelf: "center" },
+  renderItemText: {
+    fontSize: 12,
+    fontWeight: "bold",
+    fontFamily: "serif",
+    color: COLOR_BLACK,
+    alignSelf: "center",
+    marginTop: 10,
+  },
+  text: {
+    fontFamily: "sans-serif-light",
+    fontSize: 18,
+    fontWeight: "bold",
+    color: COLOR_BLUE,
+    alignSelf: "center",
   },
 });

@@ -13,7 +13,7 @@ const Splash = (props) => {
     NetInfo.fetch().then((state) => {
       console.log("Connection type", state.type);
       console.log("Is connected?", state.isConnected);
-      setTimeout(function () {
+      setTimeout(() => {
         if (state.isConnected) {
           props.navigation.replace("Main");
         } else {
