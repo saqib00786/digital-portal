@@ -24,7 +24,7 @@ const Main = (props) => {
     <View style={styles.renderItemView}>
       <TouchableOpacity
         onPress={() =>
-          props.navigation.navigate("General", { title: item.source })
+          props.navigation.navigate(item.screen, { title: item.source })
         }
         //onPress={() => props.navigation.navigate(item.source)}
         //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}

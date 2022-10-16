@@ -9,11 +9,11 @@ import {
 } from "react-native";
 import {
   jobData,
-  forcesData,
   educationData,
   deliveryServicesData,
   utilityServicesData,
   govtInitiativesData,
+  defenceDataPAF,
 } from "../../../res/data";
 import {
   COLOR_BLACK,
@@ -35,12 +35,7 @@ const General = (props) => {
         console.log(d);
         return d;
       });
-    } else if (title == "Forces") {
-      arr = forcesData.map(function (d) {
-        console.log(d);
-        return d;
-      });
-    } else if (title == "UtilityServices") {
+    } else if (title == "Utility Services") {
       arr = utilityServicesData.map(function (d) {
         console.log(d);
         return d;
@@ -50,12 +45,12 @@ const General = (props) => {
         console.log(d);
         return d;
       });
-    } else if (title == "DeliveryServices") {
+    } else if (title == "Delivery Services") {
       arr = deliveryServicesData.map(function (d) {
         console.log(d);
         return d;
       });
-    } else if (title == "GovernmentInitiatives") {
+    } else if (title == "Govt. Initiatives") {
       arr = govtInitiativesData.map(function (d) {
         console.log(d);
         return d;
@@ -70,7 +65,7 @@ const General = (props) => {
     <View style={styles.renderItemView}>
       <TouchableOpacity
         onPress={() =>
-          props.navigation.navigate("WebViewScreen", { link: item.uri })
+          props.navigation.navigate("WebViewScreen", { selected: item.uri })
         }
         //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >

@@ -3,12 +3,12 @@ import React from "react";
 import { WebView } from "react-native-webview";
 
 const WebViewScreen = (props) => {
-  const { link } = props.route.params;
+  const { selected } = props.route.params;
 
   return (
     <View style={styles.container}>
       <WebView
-        source={{ uri: link }}
+        source={{ uri: selected }}
         startInLoadingState={true}
         renderLoading={() => (
           <ActivityIndicator

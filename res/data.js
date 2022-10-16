@@ -1,34 +1,39 @@
 import {
-  AIRFORCE_LOGO,
-  ARMY_LOGO,
+  AJKPSC_LOGO,
   BENAZIR_INCOME_LOGO,
   BISE_RWP_LOGO,
+  BPSC_LOGO,
+  CSS_LOGO,
+  DEFENCE_LOGO,
   DELIVERY_SERVICES_LOGO,
   DHL_LOGO,
   DRIVING_LOGO,
+  ECAT_LOGO,
   EDUCATION_LOGO,
   EHSAAS_PROGRAM_LOGO,
   EROZGAR_LOGO,
   E_LEARN_LOGO,
   FBISE_LOGO,
-  FORCES_LOGO,
   FPSC_LOGO,
+  GAT_LOGO,
   GOVERNMENT_INITIATIVES_LOGO,
   HEC_LOGO,
-  HELPLINE_LOGO,
   JOB_LOGO,
   KAMYAB_JAWAN_LOGO,
+  KPPSC_LOGO,
   LEOPARDS_LOGO,
-  NAVY_LOGO,
+  MDCAT_LOGO,
+  MOD_LOGO,
+  NTS_LOGO,
   PAKISTAN_CITIZEN_PORTAL_LOGO,
   PAKISTAN_POST_LOGO,
   PPSC_LOGO,
   PTCL_LOGO,
   ROSHAN_DIGITAL_LOGO,
+  SPSC_LOGO,
   SUI_GAS_LOGO,
   TCS_LOGO,
   UTILITY_SERVICES_LOGO,
-  VISA_LOGO,
   WAPDA_LOGO,
 } from "../res/drawables";
 
@@ -38,48 +43,44 @@ export const data = [
     services: "EDUCATION",
     img: EDUCATION_LOGO,
     source: "Education",
+    screen: "General",
   },
   {
-    services: "FORCES",
-    img: FORCES_LOGO,
-    source: "Forces",
+    services: "DEFENCE",
+    img: DEFENCE_LOGO,
+    source: "Defence",
+    screen: "DropDownDefence",
   },
   {
-    services: "DRIVING LICENSE",
-    img: DRIVING_LOGO,
+    services: "GOVT. SECTOR",
+    img: MOD_LOGO,
     source: "",
+    screen: "DropDownGovtSec",
   },
   {
     services: "JOBS",
     img: JOB_LOGO,
     source: "Job",
+    screen: "General",
   },
   {
     services: "UTILITY SERVICES",
     img: UTILITY_SERVICES_LOGO,
-    source: "UtilityServices",
+    source: "Utility Services",
+    screen: "General",
   },
 
   {
     services: "DELIVERY SERVICES",
     img: DELIVERY_SERVICES_LOGO,
-    source: "DeliveryServices",
+    source: "Delivery Services",
+    screen: "General",
   },
   {
     services: "GOVT INITIATIVES",
     img: GOVERNMENT_INITIATIVES_LOGO,
-    source: "GovernmentInitiatives",
-  },
-  {
-    services: "VISA",
-    img: VISA_LOGO,
-    source: "",
-  },
-
-  {
-    services: "HELPLINE",
-    img: HELPLINE_LOGO,
-    source: "",
+    source: "Govt. Initiatives",
+    screen: "General",
   },
 ];
 
@@ -146,27 +147,95 @@ export const utilityServicesData = [
   },
 ];
 
-//FORCES SCREEN DATA
-export const forcesData = [
+//DEFENCE SCREEN DATA
+export const defenceDataPAF = [
   {
-    services: "Pakistan Army",
-    img: ARMY_LOGO,
-    uri: "https://pakistanarmy.gov.pk/",
+    value: "Officer",
+    key: "https://joinpaf.gov.pk/career/officers",
+  },
+  { value: "Airman", key: "https://joinpaf.gov.pk/career/airmen" },
+  { value: "Civilians", key: "https://joinpaf.gov.pk/career/civilians" },
+];
+export const defenceDataARMY = [
+  {
+    value: "Medical Cadet",
+    key: "https://www.joinpakarmy.gov.pk/",
   },
   {
-    services: "Pakistan Airforce",
-    img: AIRFORCE_LOGO,
-    uri: "https://paf.gov.pk/",
+    value: "Lady Cadet",
+    key: "https://www.joinpakarmy.gov.pk/",
   },
   {
-    services: "Pakistan Navy",
-    img: NAVY_LOGO,
-    uri: "https://www.paknavy.gov.pk/",
+    value: "Direct Short Service Comission",
+    key: "https://www.joinpakarmy.gov.pk/",
+  },
+  {
+    value: "Junior Commissioned officer",
+    key: "https://www.joinpakarmy.gov.pk/",
+  },
+  {
+    value: "Nursing",
+    key: "https://www.joinpakarmy.gov.pk/",
+  },
+  {
+    value: "PMA LC ",
+    key: "https://www.joinpakarmy.gov.pk/",
   },
 ];
-
+export const defenceDataNAVY = [
+  {
+    value: "Permanent Commission",
+    key: "https://www.joinpaknavy.gov.pk/pncadet",
+  },
+  {
+    value: "Short Service Commission",
+    key: "https://joinpaknavy.gov.pk/#",
+  },
+  { value: "Sailor", key: "https://joinpaknavy.gov.pk/#" },
+];
+export const defenceDataPOLICE = [
+  {
+    value: "Punjab Police",
+    key: "https://punjabpolice.gov.pk/",
+  },
+  { value: "KPK Police", key: "https://kppolice.gov.pk/" },
+  { value: "Sindh Police", key: "https://sindhpolice.gov.pk/" },
+  { value: "Balochistan Police", key: "https://www.balochistanpolice.gov.pk/" },
+  { value: "ISB Police", key: "https://islamabadpolice.gov.pk/" },
+];
+export const defenceDataMOD = [
+  {
+    value: "MOD",
+    key: "https://www.mod.gov.pk/",
+  },
+];
 //EDUCATION SCREEN DATA
 export const educationData = [
+  {
+    services: "PPSC",
+    img: PPSC_LOGO,
+    uri: "https://ppsc.gop.pk/",
+  },
+  {
+    services: "SPSC",
+    img: SPSC_LOGO,
+    uri: "https://www.spsc.gov.pk/",
+  },
+  {
+    services: "KPPSC",
+    img: KPPSC_LOGO,
+    uri: "https://www.kppsc.gov.pk/",
+  },
+  {
+    services: "BPSC",
+    img: BPSC_LOGO,
+    uri: "http://bpsc.gob.pk/",
+  },
+  {
+    services: "AJKPSC",
+    img: AJKPSC_LOGO,
+    uri: " (http://www.ajkpsc.gov.pk/home/default.asp",
+  },
   {
     services: "BISE_RWP",
     img: BISE_RWP_LOGO,
@@ -184,27 +253,27 @@ export const educationData = [
   },
   {
     services: "CSS",
-    img: BISE_RWP_LOGO,
+    img: CSS_LOGO,
     uri: "https://www.fpsc.gov.pk/exams/css",
   },
   {
     services: "GAT",
-    img: FBISE_LOGO,
+    img: GAT_LOGO,
     uri: "https://www.nts.org.pk/new/GAT-G.php",
   },
   {
     services: "NTS",
-    img: HEC_LOGO,
+    img: NTS_LOGO,
     uri: "https://www.nts.org.pk/new/",
   },
   {
     services: "MDCAT",
-    img: FBISE_LOGO,
+    img: MDCAT_LOGO,
     uri: "https://www.pmc.gov.pk/ ",
   },
   {
     services: "ECAT",
-    img: HEC_LOGO,
+    img: ECAT_LOGO,
     uri: "https://admission.uet.edu.pk/Modules/EntryTest/Default.aspx",
   },
 ];
@@ -244,5 +313,81 @@ export const deliveryServicesData = [
     services: "DHL",
     img: DHL_LOGO,
     uri: "https://www.dhl.com/pk-en/home.html?locale=true",
+  },
+];
+
+//GOVT. SEC SCREEN DATA
+export const govtSecDriving = [
+  {
+    value: "Punjab",
+    key: "https://dlims.punjab.gov.pk/",
+  },
+  {
+    value: "KPK",
+    key: "https://www.dlimskpk-gov.com/",
+  },
+  { value: "SINDH", key: "https://dls.gos.pk/" },
+  { value: "Balochistan", key: "https://www.dlims-balochistan.org/" },
+];
+export const govtSecExciseTaxation = [
+  {
+    value: "Punjab",
+    key: "https://excise.punjab.gov.pk/",
+  },
+  {
+    value: "KPK",
+    key: "https://excise_taxation.kp.gov.pk/",
+  },
+  {
+    value: "Sindh",
+    key: "https://excise.gos.pk/",
+  },
+  {
+    value: "Balochistan",
+    key: "https://balochistan.gov.pk/departments/excise-and-taxation/",
+  },
+  {
+    value: "AJK",
+    key: "https://www.jkexcise.in/",
+  },
+  {
+    value: "GB",
+    key: "http://gbexcise.gov.pk/ ",
+  },
+];
+export const govtSecNadra = [
+  {
+    value: "Nadra",
+    key: "https://www.nadra.gov.pk/",
+  },
+];
+export const govtSecPassport = [
+  {
+    value: "Passport",
+    key: "https://dgip.gov.pk/home/",
+  },
+];
+export const govtSecVisa = [
+  {
+    value: "Pakistan Visa Application",
+    key: "https://visa.nadra.gov.pk/",
+  },
+];
+export const govtSecMOFA = [
+  {
+    value: "MOFA",
+    key: "https://mofa.gov.pk/",
+  },
+];
+export const govtSecFBR = [
+  {
+    value: "FBR",
+    key: "https://www.fbr.gov.pk/",
+  },
+];
+export const govtSecCustom = [
+  {
+    value: "Custom",
+    key: "https://pakcustoms.org/#",
   },
 ];

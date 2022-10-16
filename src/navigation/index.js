@@ -7,6 +7,8 @@ import { COLOR_BLUE, COLOR_WHITE } from "../../res/drawables";
 import WebViewScreen from "../screens/WebViewScreen";
 import General from "../screens/General";
 import NetworkErrorScreen from "../screens/NetworkErrorScreen";
+import DropDownGovtSec from "../screens/DropDownGovtSec";
+import DropDownDefence from "../screens/DropDownDefence";
 
 const Stack = createNativeStackNavigator();
 
@@ -48,7 +50,36 @@ function Navigation() {
             headerTintColor: COLOR_WHITE,
           }}
         />
-
+        <Stack.Screen
+          name="DropDownDefence"
+          component={DropDownDefence}
+          options={{
+            headerTitleStyle: {
+              color: COLOR_WHITE,
+              fontFamily: "serif",
+              fontWeight: "bold",
+            },
+            headerStyle: {
+              backgroundColor: COLOR_BLUE,
+            },
+            headerTintColor: COLOR_WHITE,
+          }}
+        />
+        <Stack.Screen
+          name="DropDownGovtSec"
+          component={DropDownGovtSec}
+          options={{
+            headerTitleStyle: {
+              color: COLOR_WHITE,
+              fontFamily: "serif",
+              fontWeight: "bold",
+            },
+            headerStyle: {
+              backgroundColor: COLOR_BLUE,
+            },
+            headerTintColor: COLOR_WHITE,
+          }}
+        />
         <Stack.Screen
           name="WebViewScreen"
           component={WebViewScreen}
