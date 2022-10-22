@@ -25,14 +25,7 @@ function Navigation() {
           name="Main"
           component={Main}
           options={{
-            headerTitleStyle: {
-              color: COLOR_WHITE,
-              fontFamily: "serif",
-              fontWeight: "bold",
-            },
-            headerStyle: {
-              backgroundColor: COLOR_BLUE,
-            },
+            headerShown : false
           }}
         />
         <Stack.Screen

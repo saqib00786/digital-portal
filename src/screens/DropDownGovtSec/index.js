@@ -56,6 +56,10 @@ const DropDownGovtSec = (props) => {
     console.log(d);
     return d;
   });
+
+  // const navScree = () =>{
+  //   props.navigation.navigate("We",{})
+  // }
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -66,9 +70,7 @@ const DropDownGovtSec = (props) => {
         <SelectList
           setSelected={setSelected}
           data={arr}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => navScreen(selected)}
         />
         <View style={styles.viewDropDown}>
           <Text style={styles.textDropDown}>

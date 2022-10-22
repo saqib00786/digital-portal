@@ -26,8 +26,11 @@ const Splash = (props) => {
   return (
     <View style={styles.container}>
       <Image source={SPLASH_LOGO} style={styles.img} />
-      <Text style={styles.text1}>DIGITAL SERVICES</Text>
-      <Text style={styles.text2}>PAKISTAN.</Text>
+      <Text style={styles.text3}>IDEA SOFT</Text>
+      <View style={styles.textBox}>
+        <Text style={styles.text1}>DIGITAL SERVICES</Text>
+        <Text style={styles.text2}>PAKISTAN</Text>
+      </View>
     </View>
   );
 };
@@ -35,26 +38,44 @@ const Splash = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignContent: "center",
-    justifyContent: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: BACKGROUND_COLOR,
   },
-  img: { width: 200, height: 200, resizeMode: "contain", alignSelf: "center" },
+  img: {
+    width: 100,
+    height: 100,
+    resizeMode: "contain",
+    alignSelf: "center"
+  },
   text1: {
     color: COLOR_GRAY,
     alignSelf: "center",
-    fontSize: 30,
-    fontFamily: "sans-serif-light",
-    marginTop: 70,
-    fontWeight: "700",
+    fontSize: 24,
+    fontFamily: "sans-serif",
+    fontWeight: "bold",
   },
   text2: {
     color: COLOR_BLUE,
-    alignSelf: "flex-end",
-    marginRight: 50,
-    fontSize: 20,
+    right: 0,
+    alignSelf: 'flex-end',
+    fontSize: 16,
     fontFamily: "sans-serif-light",
-    fontWeight: "670",
+    fontWeight: "bold",
+
   },
+  text3: {
+    color: COLOR_BLUE,
+    // right: 0,
+    alignSelf: 'center',
+    fontSize: 10,
+    fontFamily: "sans-serif-light",
+    fontWeight: "bold",
+  },
+  textBox: {
+    position: 'absolute',
+    bottom: 0,
+    margin: 30
+  }
 });
 export default Splash;
