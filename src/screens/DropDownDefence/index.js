@@ -15,6 +15,7 @@ import {
   NAVY_LOGO,
   POLICE_LOGO,
 } from "../../../res/drawables";
+import DropList from '../../Components/DropList'
 
 const DropDownDefence = (props) => {
   const [selected, setSelected] = React.useState("");
@@ -40,64 +41,47 @@ const DropDownDefence = (props) => {
     return d;
   });
 
+  const nav = (selected) => {
+    props.navigation.navigate("WebViewScreen", { selected })
+  }
+
   return (
     <ScrollView>
       <View style={styles.container}>
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>ARMY</Text>
-          <Image style={styles.imageDropDown} source={ARMY_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"ARMY"}
+          logo={ARMY_LOGO}
           setSelected={setSelected}
           data={arr}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected)}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>PAF</Text>
-          <Image style={styles.imageDropDown} source={AIRFORCE_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"PAF"}
+          logo={AIRFORCE_LOGO}
           setSelected={setSelected}
           data={arr1}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected)}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>NAVY</Text>
-          <Image style={styles.imageDropDown} source={NAVY_LOGO} />
-        </View>
-
-        <SelectList
+        <DropList
+          title={"NAVY"}
+          logo={NAVY_LOGO}
           setSelected={setSelected}
           data={arr2}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected)}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>POLICE</Text>
-          <Image style={styles.imageDropDown} source={POLICE_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"POLICE"}
+          logo={POLICE_LOGO}
           setSelected={setSelected}
           data={arr3}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected)}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>MOD</Text>
-          <Image style={styles.imageDropDown} source={MOD_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"MOD"}
+          logo={MOD_LOGO}
           setSelected={setSelected}
           data={arr4}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected)}
         />
       </View>
     </ScrollView>
@@ -113,6 +97,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 10,
+    padding: 2
   },
   textDropDown: { fontSize: 25, fontFamily: "serif", marginTop: 5 },
   imageDropDown: { width: 45, height: 45 },
