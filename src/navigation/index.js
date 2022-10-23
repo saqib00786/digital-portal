@@ -76,17 +76,7 @@ function Navigation() {
         <Stack.Screen
           name="WebViewScreen"
           component={WebViewScreen}
-          options={{
-            headerTitleStyle: {
-              color: COLOR_WHITE,
-              fontFamily: "serif",
-              fontWeight: "bold",
-            },
-            headerStyle: {
-              backgroundColor: COLOR_BLUE,
-            },
-            headerTintColor: COLOR_WHITE,
-          }}
+          options={{headerShown : false}}
         />
         <Stack.Screen
           options={{ headerShown: false }}
