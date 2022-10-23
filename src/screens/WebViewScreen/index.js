@@ -7,6 +7,7 @@ const WebViewScreen = (props) => {
 
   return (
     <View style={styles.container}>
+    
       <WebView
         source={{ uri: selected }} 
         startInLoadingState={true}
