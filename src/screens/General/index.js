@@ -23,6 +23,7 @@ import {
 
 const General = (props) => {
   const { title } = props.route.params;
+  props.navigation.setOptions({ title: title });
   const [newArr, setArr] = useState([]);
   useEffect(() => {
     returnData();
@@ -65,7 +66,10 @@ const General = (props) => {
     <View style={styles.renderItemView}>
       <TouchableOpacity
         onPress={() =>
-          props.navigation.navigate("WebViewScreen", { selected: item.uri })
+          props.navigation.navigate("WebViewScreen", {
+            selected: item.uri,
+            title: item.services,
+          })
         }
         //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
@@ -76,7 +80,6 @@ const General = (props) => {
   );
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome To {title} Page.</Text>
       <FlatList
         data={newArr}
         numColumns={2}

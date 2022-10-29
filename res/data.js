@@ -41,7 +41,7 @@ import {
   JOBS_BG,
   UTIL_BG,
   DELV_BG,
-  GOVIN_BG
+  GOVIN_BG,
 } from "../res/drawables";
 
 //MAIN SCREEN DATA
@@ -51,35 +51,35 @@ export const data = [
     img: EDUCATION_LOGO,
     source: "Education",
     screen: "General",
-    imgbg : EDU_BG
+    imgbg: EDU_BG,
   },
   {
     services: "DEFENCE",
     img: DEFENCE_LOGO,
     source: "Defence",
     screen: "DropDownDefence",
-    imgbg : DEF_BG
+    imgbg: DEF_BG,
   },
   {
     services: "GOVT. SECTOR",
     img: MOD_LOGO,
-    source: "",
+    source: "GOVT. SECTOR",
     screen: "DropDownGovtSec",
-    imgbg : GOVT_BG
+    imgbg: GOVT_BG,
   },
   {
     services: "JOBS",
     img: JOB_LOGO,
     source: "Job",
     screen: "General",
-    imgbg : JOBS_BG
+    imgbg: JOBS_BG,
   },
   {
     services: "UTILITY SERVICES",
     img: UTILITY_SERVICES_LOGO,
     source: "Utility Services",
     screen: "General",
-    imgbg : UTIL_BG
+    imgbg: UTIL_BG,
   },
 
   {
@@ -87,16 +87,15 @@ export const data = [
     img: DELIVERY_SERVICES_LOGO,
     source: "Delivery Services",
     screen: "General",
-    imgbg : DELV_BG
+    imgbg: DELV_BG,
   },
   {
     services: "GOVT INITIATIVES",
     img: GOVERNMENT_INITIATIVES_LOGO,
     source: "Govt. Initiatives",
     screen: "General",
-    imgbg : GOVIN_BG
+    imgbg: GOVIN_BG,
   },
-  
 ];
 
 //GOVERNMENT INITIATIVES SERVICES SCREEN DATA

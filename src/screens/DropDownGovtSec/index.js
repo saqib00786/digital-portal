@@ -1,6 +1,5 @@
-import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import React from "react";
-import SelectList from "react-native-dropdown-select-list";
 import {
   govtSecCustom,
   govtSecDriving,
@@ -21,9 +20,12 @@ import {
   PASSPORT_LOGO,
   VISA_LOGO,
 } from "../../../res/drawables";
+import DropList from "../../Components/DropList";
 
 const DropDownGovtSec = (props) => {
   const [selected, setSelected] = React.useState("");
+  const { title } = props.route.params;
+  props.navigation.setOptions({ title: title });
   let arr = govtSecDriving.map(function (d) {
     console.log(d);
     return d;
@@ -56,101 +58,70 @@ const DropDownGovtSec = (props) => {
     console.log(d);
     return d;
   });
-
+  const nav = (selected, title) => {
+    props.navigation.navigate("WebViewScreen", { selected, title });
+  };
   // const navScree = () =>{
   //   props.navigation.navigate("We",{})
   // }
   return (
     <ScrollView>
       <View style={styles.container}>
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>Driving License</Text>
-          <Image style={styles.imageDropDown} source={DRIVING_LICENSE_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"DRIVING LICENSE"}
+          logo={DRIVING_LICENSE_LOGO}
           setSelected={setSelected}
           data={arr}
-          onSelect={() => navScreen(selected)}
+          onSelect={() => nav(selected, "Driving License")}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>
-            Excise,Tax & Narcotics Control Dept
-          </Text>
-          <Image style={styles.imageDropDown} source={EXCISE_TAX_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"Excise,Tax & Narcotics Control Dept"}
+          logo={EXCISE_TAX_LOGO}
           setSelected={setSelected}
           data={arr1}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected, "Excise,Tax & Narcotics Control Dept")}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>Nadra</Text>
-          <Image style={styles.imageDropDown} source={NADRA_LOGO} />
-        </View>
-
-        <SelectList
+        <DropList
+          title={"Nadra"}
+          logo={NADRA_LOGO}
           setSelected={setSelected}
           data={arr2}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected, "Nadra")}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>Passport</Text>
-          <Image style={styles.imageDropDown} source={PASSPORT_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"Passport"}
+          logo={PASSPORT_LOGO}
           setSelected={setSelected}
           data={arr3}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected, "Passport")}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>Pakistan Visa Application</Text>
-          <Image style={styles.imageDropDown} source={VISA_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"Pakistan Visa Application"}
+          logo={VISA_LOGO}
           setSelected={setSelected}
           data={arr4}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected, "Pakistan Visa Application")}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>MOFA</Text>
-          <Image style={styles.imageDropDown} source={MOFA_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"MOFA"}
+          logo={MOFA_LOGO}
           setSelected={setSelected}
           data={arr5}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected, "MOFA")}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>FBR</Text>
-          <Image style={styles.imageDropDown} source={FBR_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"FBR"}
+          logo={FBR_LOGO}
           setSelected={setSelected}
           data={arr6}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected, "FBR")}
         />
-        <View style={styles.viewDropDown}>
-          <Text style={styles.textDropDown}>Custom</Text>
-          <Image style={styles.imageDropDown} source={CUSTOM_LOGO} />
-        </View>
-        <SelectList
+        <DropList
+          title={"Custom"}
+          logo={CUSTOM_LOGO}
           setSelected={setSelected}
           data={arr7}
-          onSelect={() =>
-            props.navigation.navigate("WebViewScreen", { selected })
-          }
+          onSelect={() => nav(selected, "Custom")}
         />
       </View>
     </ScrollView>
@@ -162,13 +133,6 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 20,
   },
-  viewDropDown: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginTop: 10,
-  },
-  textDropDown: { fontSize: 25, fontFamily: "serif", marginTop: 5 },
-  imageDropDown: { width: 45, height: 45 },
 });
 
 export default DropDownGovtSec;

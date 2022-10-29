@@ -10,6 +10,12 @@ import NetInfo from "@react-native-community/netinfo";
 
 const Splash = (props) => {
   useEffect(() => {
+    setTimeout(() => {
+      props.navigation.replace("Main");
+    }, 3000);
+  }, []);
+
+  /* useEffect(() => {
     NetInfo.fetch().then((state) => {
       console.log("Connection type", state.type);
       console.log("Is connected?", state.isConnected);
@@ -21,8 +27,7 @@ const Splash = (props) => {
         }
       }, 5000);
     });
-  }, []);
-
+  }, []); */
   return (
     <View style={styles.container}>
       <Image source={SPLASH_LOGO} style={styles.img} />
@@ -38,15 +43,15 @@ const Splash = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: BACKGROUND_COLOR,
   },
   img: {
     width: 100,
     height: 100,
     resizeMode: "contain",
-    alignSelf: "center"
+    alignSelf: "center",
   },
   text1: {
     color: COLOR_GRAY,
@@ -58,24 +63,23 @@ const styles = StyleSheet.create({
   text2: {
     color: COLOR_BLUE,
     right: 0,
-    alignSelf: 'flex-end',
+    alignSelf: "flex-end",
     fontSize: 16,
     fontFamily: "sans-serif-light",
     fontWeight: "bold",
-
   },
   text3: {
     color: COLOR_BLUE,
     // right: 0,
-    alignSelf: 'center',
+    alignSelf: "center",
     fontSize: 10,
     fontFamily: "sans-serif-light",
     fontWeight: "bold",
   },
   textBox: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 0,
-    margin: 30
-  }
+    margin: 30,
+  },
 });
 export default Splash;

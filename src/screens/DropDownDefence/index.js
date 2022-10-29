@@ -1,6 +1,5 @@
-import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import React from "react";
-import SelectList from "react-native-dropdown-select-list";
 import {
   defenceDataARMY,
   defenceDataMOD,
@@ -15,11 +14,12 @@ import {
   NAVY_LOGO,
   POLICE_LOGO,
 } from "../../../res/drawables";
-import DropList from '../../Components/DropList'
+import DropList from "../../Components/DropList";
 
 const DropDownDefence = (props) => {
   const [selected, setSelected] = React.useState("");
-
+  const { title } = props.route.params;
+  props.navigation.setOptions({ title: title });
   let arr = defenceDataARMY.map(function (d) {
     console.log(d);
     return d;
@@ -41,9 +41,9 @@ const DropDownDefence = (props) => {
     return d;
   });
 
-  const nav = (selected) => {
-    props.navigation.navigate("WebViewScreen", { selected })
-  }
+  const nav = (selected, title) => {
+    props.navigation.navigate("WebViewScreen", { selected, title });
+  };
 
   return (
     <ScrollView>
@@ -53,35 +53,35 @@ const DropDownDefence = (props) => {
           logo={ARMY_LOGO}
           setSelected={setSelected}
           data={arr}
-          onSelect={() => nav(selected)}
+          onSelect={() => nav(selected, "Army")}
         />
         <DropList
           title={"PAF"}
           logo={AIRFORCE_LOGO}
           setSelected={setSelected}
           data={arr1}
-          onSelect={() => nav(selected)}
+          onSelect={() => nav(selected, "PAF")}
         />
         <DropList
           title={"NAVY"}
           logo={NAVY_LOGO}
           setSelected={setSelected}
           data={arr2}
-          onSelect={() => nav(selected)}
+          onSelect={() => nav(selected, "NAVY")}
         />
         <DropList
           title={"POLICE"}
           logo={POLICE_LOGO}
           setSelected={setSelected}
           data={arr3}
-          onSelect={() => nav(selected)}
+          onSelect={() => nav(selected, "POLICE")}
         />
         <DropList
           title={"MOD"}
           logo={MOD_LOGO}
           setSelected={setSelected}
           data={arr4}
-          onSelect={() => nav(selected)}
+          onSelect={() => nav(selected, "MOD")}
         />
       </View>
     </ScrollView>
@@ -93,14 +93,6 @@ const styles = StyleSheet.create({
     flex: 1,
     margin: 20,
   },
-  viewDropDown: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginTop: 10,
-    padding: 2
-  },
-  textDropDown: { fontSize: 25, fontFamily: "serif", marginTop: 5 },
-  imageDropDown: { width: 45, height: 45 },
 });
 
 export default DropDownDefence;
