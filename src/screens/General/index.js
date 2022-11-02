@@ -29,38 +29,45 @@ const General = (props) => {
     returnData();
   }, []);
 
+
   const returnData = () => {
     let arr = [];
-    if (title == "Education") {
-      arr = educationData.map(function (d) {
-        console.log(d);
-        return d;
-      });
-    } else if (title == "Utility Services") {
-      arr = utilityServicesData.map(function (d) {
-        console.log(d);
-        return d;
-      });
-    } else if (title == "Job") {
-      arr = jobData.map(function (d) {
-        console.log(d);
-        return d;
-      });
-    } else if (title == "Delivery Services") {
-      arr = deliveryServicesData.map(function (d) {
-        console.log(d);
-        return d;
-      });
-    } else if (title == "Govt. Initiatives") {
-      arr = govtInitiativesData.map(function (d) {
-        console.log(d);
-        return d;
-      });
-    } else {
-      return 0;
+    switch (title) {
+      case 'Education':
+        arr = educationData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
+      case 'Utility Services':
+        arr = utilityServicesData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
+      case 'Job':
+        arr = jobData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
+      case 'Delivery Services':
+        arr = deliveryServicesData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
+      case 'Govt. Initiatives':
+        arr = govtInitiativesData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
+      default:
+        return
     }
-    setArr(arr);
-  };
+    setArr(arr)
+  }
 
   const renderItem = ({ item }) => (
     <View style={styles.renderItemView}>
@@ -71,7 +78,7 @@ const General = (props) => {
             title: item.services,
           })
         }
-        //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
+      //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
         <Image source={item.img} style={styles.renderItemImage} />
         <Text style={styles.renderItemText}>{item.services}</Text>

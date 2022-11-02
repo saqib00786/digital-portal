@@ -1,18 +1,12 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import Navigation from "./src/navigation";
+import { Provider } from 'react-native-paper'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Navigation />
-    </View>
+      <Provider>
+        <Navigation />
+      </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-});

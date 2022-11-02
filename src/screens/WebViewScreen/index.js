@@ -8,6 +8,7 @@ const WebViewScreen = (props) => {
   props.navigation.setOptions({ title: title });
   return (
     <View style={styles.container}>
+    
       <WebView
         source={{ uri: selected }}
         startInLoadingState={true}
