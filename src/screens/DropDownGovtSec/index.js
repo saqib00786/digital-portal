@@ -68,7 +68,7 @@ const DropDownGovtSec = (props) => {
     <ScrollView>
       <View style={styles.container}>
         <DropList
-          title={"DRIVING LICENSE"}
+          title={"Driving License"}
           logo={DRIVING_LICENSE_LOGO}
           setSelected={setSelected}
           data={arr}
@@ -131,7 +131,7 @@ const DropDownGovtSec = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 20,
+    margin: '5%', 
   },
 });
 
