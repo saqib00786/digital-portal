@@ -100,16 +100,16 @@ export default General;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems:'center',
+    alignItems: "center",
     // margin: 10,
     marginTop: "7%",
   },
   renderItemView: {
     // backgroundColor: COLOR_LIGHT_BLUE,
-    borderWidth:1,
-    borderColor:COLOR_LIGHT_BLUE,    
-    margin: '4%',
-    padding: '3%',
+    borderWidth: 1,
+    borderColor: COLOR_LIGHT_BLUE,
+    margin: "4%",
+    padding: "3%",
     // marginTop: 18,
     width: "42%",
     borderRadius: 15,
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     // fontFamily: "serif",
     color: COLOR_BLACK,
     alignSelf: "center",
-    marginTop: '8%',
+    marginTop: "8%",
   },
   text: {
     fontFamily: "sans-serif-light",
