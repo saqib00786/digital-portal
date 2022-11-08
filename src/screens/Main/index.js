@@ -74,7 +74,7 @@ const Main = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.textHeader}>
-        <Text style={styles.topHeading1}>WELCOME TO</Text>
+        <Text style={styles.topHeading1}>Welcome To</Text>
         <Text style={styles.topHeading2}>DIGITAL SERVICES PORTAL</Text>
       </View>
       <FlatList
@@ -129,13 +129,13 @@ const styles = StyleSheet.create({
   },
   topHeading1: {
     fontFamily: "sans-serif",
-    fontSize: 18,
-    fontWeight: "400",
+    fontSize: 15,
+    // fontWeight: "400",
     color: COLOR_WHITE,
   },
   topHeading2: {
     fontFamily: "sans-serif",
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: "bold",
     color: COLOR_WHITE,
   },
@@ -149,10 +149,10 @@ const styles = StyleSheet.create({
   textHeader: {
     //margin: 8,
     //marginTop: 40,
-    paddingTop: 40,
-    padding: 8,
+    paddingTop: '12%',
+    padding: '5%',
     backgroundColor: COLOR_BLUE,
-    borderBottomEndRadius: 40,
+    // borderBottomEndRadius: 40,
     height: 110,
   },
 });

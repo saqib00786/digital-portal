@@ -24,9 +24,11 @@ const styles = StyleSheet.create({
     viewDropDown: {
         flexDirection: "row",
         justifyContent: "space-between",
-        marginTop: 10,
-        padding: 2
+        marginTop: 5,
+       paddingBottom:5
     },
-    textDropDown: { fontSize: 25, fontFamily: "serif", marginTop: 5 },
-    imageDropDown: { width: 45, height: 45 },
+    textDropDown: { fontSize: 15, 
+        //fontFamily: "serif",
+         marginTop: 10 },
+    imageDropDown: { width: '10%', height: '100%' },
 })
