@@ -76,6 +76,7 @@ export const MOFA_LOGO = require(PATH + "/MOFA.png");
 export const FBR_LOGO = require(PATH + "/FBR.png");
 export const CUSTOM_LOGO = require(PATH + "/customs.png");
 
+//<<<<<<< master
 
 // export const EDU_BG = require(PATH+"/edu.jpg")
 export const DEF_BG = require(PATH+"/defence.jpg")
@@ -84,3 +85,12 @@ export const JOBS_BG = require(PATH+"/jobs.jpg")
 export const DELV_BG = require(PATH+"/deleviry.jpg")
 export const UTIL_BG = require(PATH+"/utility.jpg")
 export const GOVIN_BG = require(PATH+"/govt_init.png")
+//MAIN SCREEN MODIFIED LOGOS
+export const EDU_BG = require(PATH + "/edu.jpg");
+export const DEF_BG = require(PATH + "/defence.jpg");
+export const GOVT_BG = require(PATH + "/govt.jpg");
+export const JOBS_BG = require(PATH + "/jobs.jpg");
+export const DELV_BG = require(PATH + "/deleviry.jpg");
+export const UTIL_BG = require(PATH + "/utility.jpg");
+export const GOVIN_BG = require(PATH + "/govin.jpg");
+//>>>>>>> master
