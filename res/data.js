@@ -5,6 +5,7 @@ import {
   BPSC_LOGO,
   CSS_LOGO,
   DEFENCE_LOGO,
+  DEFENSE_LOGO,
   DELIVERY_SERVICES_LOGO,
   DHL_LOGO,
   DRIVING_LOGO,
@@ -36,6 +37,7 @@ import {
   UTILITY_SERVICES_LOGO,
   WAPDA_LOGO,
   EDU_BG,
+  EDU_LOGO,
   DEF_BG,
   GOVT_BG,
   JOBS_BG,
@@ -51,14 +53,14 @@ export const data = [
     img: EDUCATION_LOGO,
     source: "Education",
     screen: "General",
-    imgbg: EDU_BG,
+    imgbg: EDU_LOGO,
   },
   {
     services: "DEFENCE",
-    img: DEFENCE_LOGO,
+    img: DEFENSE_LOGO,
     source: "Defence",
     screen: "DropDownDefence",
-    imgbg: DEF_BG,
+    imgbg: DEFENSE_LOGO,
   },
   {
     services: "GOVT. SECTOR",
@@ -226,41 +228,6 @@ export const defenceDataMOD = [
 //EDUCATION SCREEN DATA
 export const educationData = [
   {
-    services: "PPSC",
-    img: PPSC_LOGO,
-    uri: "https://ppsc.gop.pk/",
-  },
-  {
-    services: "SPSC",
-    img: SPSC_LOGO,
-    uri: "https://www.spsc.gov.pk/",
-  },
-  {
-    services: "KPPSC",
-    img: KPPSC_LOGO,
-    uri: "https://www.kppsc.gov.pk/",
-  },
-  {
-    services: "BPSC",
-    img: BPSC_LOGO,
-    uri: "http://bpsc.gob.pk/",
-  },
-  {
-    services: "AJKPSC",
-    img: AJKPSC_LOGO,
-    uri: " (http://www.ajkpsc.gov.pk/home/default.asp",
-  },
-  {
-    services: "BISE_RWP",
-    img: BISE_RWP_LOGO,
-    uri: "https://www.biserawalpindi.edu.pk/",
-  },
-  {
-    services: "FBISE",
-    img: FBISE_LOGO,
-    uri: "https://fbise.edu.pk/",
-  },
-  {
     services: "HEC",
     img: HEC_LOGO,
     uri: "https://www.hec.gov.pk/",
@@ -290,19 +257,49 @@ export const educationData = [
     img: ECAT_LOGO,
     uri: "https://admission.uet.edu.pk/Modules/EntryTest/Default.aspx",
   },
+  {
+    services: "BISE_RWP",
+    img: BISE_RWP_LOGO,
+    uri: "https://www.biserawalpindi.edu.pk/",
+  },
+  {
+    services: "FBISE",
+    img: FBISE_LOGO,
+    uri: "https://fbise.edu.pk/",
+  },
 ];
 
 //JOB SCREEN DATA
 export const jobData = [
+  {
+    services: "FPSC",
+    img: FPSC_LOGO,
+    uri: "https://www.fpsc.gov.pk/",
+  },
   {
     services: "PPSC",
     img: PPSC_LOGO,
     uri: "https://ppsc.gop.pk/",
   },
   {
-    services: "FPSC",
-    img: FPSC_LOGO,
-    uri: "https://www.fpsc.gov.pk/",
+    services: "SPSC",
+    img: SPSC_LOGO,
+    uri: "https://www.spsc.gov.pk/",
+  },
+  {
+    services: "KPPSC",
+    img: KPPSC_LOGO,
+    uri: "https://www.kppsc.gov.pk/",
+  },
+  {
+    services: "BPSC",
+    img: BPSC_LOGO,
+    uri: "http://bpsc.gob.pk/",
+  },
+  {
+    services: "AJKPSC",
+    img: AJKPSC_LOGO,
+    uri: " (http://www.ajkpsc.gov.pk/home/default.asp",
   },
 ];
 
