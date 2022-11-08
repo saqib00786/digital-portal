@@ -4,6 +4,7 @@ export const COLOR_BLACK = "#000000";
 export const COLOR_BLUE = "#2294f2";
 export const COLOR_LIGHT_BLUE = "#a6d4f9";
 export const COLOR_GRAY = "#364144";
+export const PAK_GOVT_COLOR="#01411c"
 
 const PATH = "../assets";
 //SPLASJH SCREEN LOGO
@@ -13,6 +14,8 @@ export const SPLASH_LOGO = require(PATH + "/dp_logo.png");
 export const UTILITY_SERVICES_LOGO = require(PATH + "/utilityServices.png");
 export const EDUCATION_LOGO = require(PATH + "/education.png");
 export const DEFENCE_LOGO = require(PATH + "/forces.png");
+export const DEFENSE_LOGO = require(PATH + "/defense.png");
+export const EDU_LOGO = require(PATH + "/edu.png");
 export const JOB_LOGO = require(PATH + "/job.png");
 export const GOVERNMENT_INITIATIVES_LOGO = require(PATH + "/nadra.png");
 export const DELIVERY_SERVICES_LOGO = require(PATH + "/deliveryServices.png");
@@ -73,6 +76,15 @@ export const MOFA_LOGO = require(PATH + "/MOFA.png");
 export const FBR_LOGO = require(PATH + "/FBR.png");
 export const CUSTOM_LOGO = require(PATH + "/customs.png");
 
+//<<<<<<< master
+
+// export const EDU_BG = require(PATH+"/edu.jpg")
+export const DEF_BG = require(PATH+"/defence.jpg")
+export const GOVT_BG = require(PATH+"/govt_sectors.png")
+export const JOBS_BG = require(PATH+"/jobs.jpg")
+export const DELV_BG = require(PATH+"/deleviry.jpg")
+export const UTIL_BG = require(PATH+"/utility.jpg")
+export const GOVIN_BG = require(PATH+"/govt_init.png")
 //MAIN SCREEN MODIFIED LOGOS
 export const EDU_BG = require(PATH + "/edu.jpg");
 export const DEF_BG = require(PATH + "/defence.jpg");
@@ -81,3 +93,4 @@ export const JOBS_BG = require(PATH + "/jobs.jpg");
 export const DELV_BG = require(PATH + "/deleviry.jpg");
 export const UTIL_BG = require(PATH + "/utility.jpg");
 export const GOVIN_BG = require(PATH + "/govin.jpg");
+//>>>>>>> master
