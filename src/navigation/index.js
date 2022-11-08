@@ -25,7 +25,7 @@ function Navigation() {
           name="Main"
           component={Main}
           options={{
-            headerShown : false
+            headerShown: false,
           }}
         />
         <Stack.Screen
@@ -76,7 +76,18 @@ function Navigation() {
         <Stack.Screen
           name="WebViewScreen"
           component={WebViewScreen}
-          options={{headerShown : false}}
+          options={{
+            headerTitleStyle: {
+              color: COLOR_WHITE,
+              fontFamily: "serif",
+              fontWeight: "bold",
+            },
+            headerStyle: {
+              backgroundColor: COLOR_BLUE,
+            },
+            headerTintColor: COLOR_WHITE,
+          }}
+          //options={{headerShown : false}}
         />
         <Stack.Screen
           options={{ headerShown: false }}
