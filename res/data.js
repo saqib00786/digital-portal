@@ -49,35 +49,35 @@ import {
 //MAIN SCREEN DATA
 export const data = [
   {
-    services: "EDUCATION",
+    services: "Education",
     img: EDUCATION_LOGO,
     source: "Education",
     screen: "General",
     imgbg: EDU_LOGO,
   },
   {
-    services: "DEFENCE",
+    services: "Defence",
     img: DEFENSE_LOGO,
     source: "Defence",
     screen: "DropDownDefence",
     imgbg: DEFENSE_LOGO,
   },
   {
-    services: "GOVT. SECTOR",
+    services: "Govt Sectors",
     img: MOD_LOGO,
     source: "GOVT. SECTOR",
     screen: "DropDownGovtSec",
     imgbg: GOVT_BG,
   },
   {
-    services: "JOBS",
+    services: "Jobs",
     img: JOB_LOGO,
     source: "Job",
     screen: "General",
     imgbg: JOBS_BG,
   },
   {
-    services: "UTILITY SERVICES",
+    services: "Utility Services",
     img: UTILITY_SERVICES_LOGO,
     source: "Utility Services",
     screen: "General",
@@ -85,14 +85,14 @@ export const data = [
   },
 
   {
-    services: "DELIVERY SERVICES",
+    services: "Delivery Services",
     img: DELIVERY_SERVICES_LOGO,
     source: "Delivery Services",
     screen: "General",
     imgbg: DELV_BG,
   },
   {
-    services: "GOVT INITIATIVES",
+    services: "Govt Initiatives",
     img: GOVERNMENT_INITIATIVES_LOGO,
     source: "Govt. Initiatives",
     screen: "General",
