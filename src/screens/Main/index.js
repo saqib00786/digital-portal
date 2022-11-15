@@ -66,7 +66,7 @@ const Main = (props) => {
           colors={["rgba(0,0,0,0)", "rgba(0,0,0,1)"]}
           style={styles.gradientContainer}
         >
-          <Text style={styles.renderItemText}>{item.services}</Text>
+          <Text style={styles.renderItemText}>{item.source}</Text>
         </LinearGradient>
       </TouchableOpacity>
     </ImageBackground>
@@ -149,8 +149,8 @@ const styles = StyleSheet.create({
   textHeader: {
     //margin: 8,
     //marginTop: 40,
-    paddingTop: '12%',
-    padding: '5%',
+    paddingTop: "12%",
+    padding: "5%",
     backgroundColor: COLOR_BLUE,
     // borderBottomEndRadius: 40,
     height: 110,

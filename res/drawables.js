@@ -10,20 +10,11 @@ const PATH = "../assets";
 //SPLASJH SCREEN LOGO
 export const SPLASH_LOGO = require(PATH + "/dp_logo.png");
 
-//MAIN SCREEN LOGOS
-export const UTILITY_SERVICES_LOGO = require(PATH + "/utilityServices.png");
-export const EDUCATION_LOGO = require(PATH + "/education.png");
-export const DEFENCE_LOGO = require(PATH + "/forces.png");
-export const DEFENSE_LOGO = require(PATH + "/defense.png");
-export const EDU_LOGO = require(PATH + "/edu.png");
-export const JOB_LOGO = require(PATH + "/job.png");
-export const GOVERNMENT_INITIATIVES_LOGO = require(PATH + "/nadra.png");
-export const DELIVERY_SERVICES_LOGO = require(PATH + "/deliveryServices.png");
-
 //UTILITY SERVICES SCREEN LOGOS
 export const SUI_GAS_LOGO = require(PATH + "/SuiGas.png");
 export const PTCL_LOGO = require(PATH + "/ptcl.png");
 export const WAPDA_LOGO = require(PATH + "/wapda.png");
+export const K_ELECTRIC_LOGO = require(PATH + "/K_Electric.png");
 
 //DEFENCE SCREEN LOGOS
 export const ARMY_LOGO = require(PATH + "/army.png");
@@ -37,10 +28,6 @@ export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
 export const FBISE_LOGO = require(PATH + "/fbise.png");
 export const HEC_LOGO = require(PATH + "/hec.png");
 export const MDCAT_LOGO = require(PATH + "/MDCAT.png");
-export const SPSC_LOGO = require(PATH + "/SPSC.png");
-export const KPPSC_LOGO = require(PATH + "/kppsc.png");
-export const BPSC_LOGO = require(PATH + "/BPSC.png");
-export const AJKPSC_LOGO = require(PATH + "/AJKPSC.png");
 export const NTS_LOGO = require(PATH + "/NTS.png");
 export const ECAT_LOGO = require(PATH + "/ECAT.png");
 export const CSS_LOGO = require(PATH + "/CSS.png");
@@ -49,6 +36,10 @@ export const GAT_LOGO = require(PATH + "/GAT.png");
 //JOB SCREEN LOGOS
 export const PPSC_LOGO = require(PATH + "/ppsc.png");
 export const FPSC_LOGO = require(PATH + "/fpsc.png");
+export const SPSC_LOGO = require(PATH + "/SPSC.png");
+export const KPPSC_LOGO = require(PATH + "/kppsc.png");
+export const BPSC_LOGO = require(PATH + "/BPSC.png");
+export const AJKPSC_LOGO = require(PATH + "/AJKPSC.png");
 
 //DELIVERY SERVICES SCREEN LOGO
 export const PAKISTAN_POST_LOGO = require(PATH + "/pakistan_post.png");
