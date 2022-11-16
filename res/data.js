@@ -36,6 +36,17 @@ import {
   DELV_BG,
   GOVIN_BG,
   K_ELECTRIC_LOGO,
+  CHARJI_LOGO,
+  IESCO_LOGO,
+  LESCO_LOGO,
+  FESCO_LOGO,
+  GEPCO_LOGO,
+  HESCO_LOGO,
+  PESCO_LOGO,
+  QESCO_LOGO,
+  TESCO_LOGO,
+  MEPCO_LOGO,
+  SEPCO_LOGO
 } from "../res/drawables";
 
 //MAIN SCREEN DATA
@@ -120,14 +131,64 @@ export const govtInitiativesData = [
 //UTILITY SERVICES SCREEN DATA
 export const utilityServicesData = [
   {
-    services: "SNGPL",
-    img: SUI_GAS_LOGO,
-    uri: "https://suigasbill.pk/",
+    services: "PTCL",
+    img: PTCL_LOGO,
+    uri: "https://dbill.ptcl.net.pk/PTCLSearchInvoice.aspx?linkId=5015",
   },
   {
-    services: "WAPDA",
-    img: WAPDA_LOGO,
-    uri: "www.wapda.gov.pk",
+    services: "EVO Charji",
+    img: CHARJI_LOGO,
+    uri: "https://dbill.ptcl.net.pk/PTCLSearchInvoiceEVO.aspx?linkId=5016",
+  },
+  {
+    services: "IESCO",
+    img: IESCO_LOGO,
+    uri: "https://bill.pitc.com.pk/iescobill",
+  },
+  {
+    services: "LESCO",
+    img: LESCO_LOGO,
+    uri: "http://www.lesco.gov.pk/modules/customerbill/checkbill.asp",
+  },
+  {
+    services: "FESCO",
+    img: FESCO_LOGO,
+    uri: "https://bill.pitc.com.pk/fescobill",
+  },
+  {
+    services: "GEPCO",
+    img: GEPCO_LOGO,
+    uri: "http://www.gepco.com.pk/GEPCOBill.aspx",
+  },
+  {
+    services: "MEPCO",
+    img: MEPCO_LOGO,
+    uri: "https://bill.pitc.com.pk/mepcobill",
+  },
+  {
+    services: "SEPCO",
+    img: SEPCO_LOGO,
+    uri: "https://bill.pitc.com.pk/sepcobill",
+  },
+  {
+    services: "HESCO",
+    img: HESCO_LOGO,
+    uri: "https://bill.pitc.com.pk/hescobill",
+  },
+  {
+    services: "PESCO",
+    img: PESCO_LOGO,
+    uri: "https://bill.pitc.com.pk/pescobill ",
+  },
+  {
+    services: "QESCO",
+    img: QESCO_LOGO,
+    uri: "http://bill.pitc.com.pk/qescobill/",
+  },
+  {
+    services: "TESCO",
+    img: TESCO_LOGO,
+    uri: "https://bill.pitc.com.pk/tescobill",
   },
   {
     services: "K-ELECTRIC",
@@ -135,10 +196,51 @@ export const utilityServicesData = [
     uri: "https://iescobill.pk/electricity-bill/",
   },
   {
-    services: "PTCL BILL",
-    img: PTCL_LOGO,
-    uri: "https://ptcl.com.pk/",
+    services: "SNGPL",
+    img: SUI_GAS_LOGO,
+    uri: "https://www.sngpl.com.pk/login.jsp?mdids=85",
   },
+  {
+    services: "SSGC",
+    img: PTCL_LOGO,
+    uri: "https://viewbill.ssgc.com.pk/web/",
+  },
+  {
+    services: "FSD WASA",
+    img: PTCL_LOGO,
+    uri: "http://wasafaisalabad.gop.pk/Home/Bill",
+  },
+  {
+    services: "RWP WASA",
+    img: PTCL_LOGO,
+    uri: "https://wasarwp.punjab.gov.pk/Onlinebill",
+  },
+  {
+    services: "LHR WASA",
+    img: PTCL_LOGO,
+    uri: "https://duplicatebill.wasalhr.punjab.gov.pk/",
+  },
+  {
+    services: "PEW WASA",
+    img: PTCL_LOGO,
+    uri: "http://web.urbanunit.gov.pk/wssp_online_bill_generator/",
+  },
+  {
+    services: "KHI WASA",
+    img: PTCL_LOGO,
+    uri: "https://www.kwsb.gos.pk/online-duplicate-retail-bill/",
+  },
+  {
+    services: "NAYATEL",
+    img: PTCL_LOGO,
+    uri: "https://customer.nayatel.com/AlfalahBank/index_new.php",
+  },
+  {
+    services: "Storm Fiber",
+    img: WAPDA_LOGO,
+    uri: "https://my.stormfiber.com/signin.php",
+  },
+
 ];
 
 //DEFENCE SCREEN DATA
