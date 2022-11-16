@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     width: "42%",
     borderRadius: 15,
   },
-  renderItemImage: { width: 70, height: 70, alignSelf: "center" },
+  renderItemImage: { width: 80, height: 80, alignSelf: "center" },
   renderItemText: {
     fontSize: 12,
     // fontWeight: "bold",
