@@ -46,20 +46,31 @@ import {
   QESCO_LOGO,
   TESCO_LOGO,
   MEPCO_LOGO,
-  SEPCO_LOGO
+  SEPCO_LOGO,
+  KHI_WASA_LOGO,  FSD_WASA_LOGO, PEW_WASA_LOGO,  LHR_WASA_LOGO, RWP_WASA_LOGO, SF_LOGO, SSGC_LOGO, NAYATEL_LOGO,
 } from "../res/drawables";
 
 //MAIN SCREEN DATA
 export const data = [
+  {
+    source: "Utility Bills",
+    screen: "General",
+    imgbg: UTIL_BG,
+  },
+  {
+    source: "Delivery Tracking",
+    screen: "General",
+    imgbg: DELV_BG,
+  },
   {
     source: "Education",
     screen: "General",
     imgbg: EDU_BG,
   },
   {
-    source: "Defence",
-    screen: "DropDownDefence",
-    imgbg: DEF_BG,
+    source: "Govt. Initiatives",
+    screen: "General",
+    imgbg: GOVIN_BG,
   },
   {
     source: "GOVT. SECTOR",
@@ -72,20 +83,9 @@ export const data = [
     imgbg: JOBS_BG,
   },
   {
-    source: "Utility Services",
-    screen: "General",
-    imgbg: UTIL_BG,
-  },
-
-  {
-    source: "Delivery Services",
-    screen: "General",
-    imgbg: DELV_BG,
-  },
-  {
-    source: "Govt. Initiatives",
-    screen: "General",
-    imgbg: GOVIN_BG,
+    source: "Defence",
+    screen: "DropDownDefence",
+    imgbg: DEF_BG,
   },
 ];
 
@@ -202,42 +202,42 @@ export const utilityServicesData = [
   },
   {
     services: "SSGC",
-    img: PTCL_LOGO,
+    img: SSGC_LOGO,
     uri: "https://viewbill.ssgc.com.pk/web/",
   },
   {
     services: "FSD WASA",
-    img: PTCL_LOGO,
+    img: FSD_WASA_LOGO,
     uri: "http://wasafaisalabad.gop.pk/Home/Bill",
   },
   {
     services: "RWP WASA",
-    img: PTCL_LOGO,
+    img: RWP_WASA_LOGO,
     uri: "https://wasarwp.punjab.gov.pk/Onlinebill",
   },
   {
     services: "LHR WASA",
-    img: PTCL_LOGO,
+    img: LHR_WASA_LOGO,
     uri: "https://duplicatebill.wasalhr.punjab.gov.pk/",
   },
   {
     services: "PEW WASA",
-    img: PTCL_LOGO,
+    img: PEW_WASA_LOGO,
     uri: "http://web.urbanunit.gov.pk/wssp_online_bill_generator/",
   },
   {
     services: "KHI WASA",
-    img: PTCL_LOGO,
+    img: KHI_WASA_LOGO,
     uri: "https://www.kwsb.gos.pk/online-duplicate-retail-bill/",
   },
   {
     services: "NAYATEL",
-    img: PTCL_LOGO,
+    img: NAYATEL_LOGO,
     uri: "https://customer.nayatel.com/AlfalahBank/index_new.php",
   },
   {
     services: "Storm Fiber",
-    img: WAPDA_LOGO,
+    img: SF_LOGO,
     uri: "https://my.stormfiber.com/signin.php",
   },
 

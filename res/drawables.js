@@ -13,7 +13,7 @@ export const SPLASH_LOGO = require(PATH + "/dp_logo.png");
 //UTILITY SERVICES SCREEN LOGOS
 export const SUI_GAS_LOGO = require(PATH + "/SuiGas.png");
 export const PTCL_LOGO = require(PATH + "/ptcl.png");
-export const CHARJI_LOGO = require(PATH + "/chargi.png");
+export const CHARJI_LOGO = require(PATH + "/charji.png");
 export const WAPDA_LOGO = require(PATH + "/wapda.png");
 export const K_ELECTRIC_LOGO = require(PATH + "/K_Electric.png");
 export const IESCO_LOGO = require(PATH + "/IESCO.png");
@@ -26,6 +26,14 @@ export const QESCO_LOGO = require(PATH + "/QESCO.png");
 export const TESCO_LOGO = require(PATH + "/TESCO.png");
 export const MEPCO_LOGO = require(PATH + "/MEPCO.png");
 export const SEPCO_LOGO = require(PATH + "/SEPCO.png");
+export const SF_LOGO = require(PATH + "/STORMFIBER.png");
+export const SSGC_LOGO = require(PATH + "/SSGC.png");
+export const RWP_WASA_LOGO = require(PATH + "/RWP_WASA.png");
+export const PEW_WASA_LOGO = require(PATH + "/PEW_WASA.png");
+export const NAYATEL_LOGO = require(PATH + "/NAYATEL.png");
+export const LHR_WASA_LOGO = require(PATH + "/LHR_WASA.png");
+export const KHI_WASA_LOGO = require(PATH + "/KHI_WASA.png");
+export const FSD_WASA_LOGO = require(PATH + "/FSD_WASA.png");
 
 
 

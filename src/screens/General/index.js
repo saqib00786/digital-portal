@@ -38,7 +38,7 @@ const General = (props) => {
           return d;
         });
         break;
-      case "Utility Services":
+      case "Utility Bills":
         arr = utilityServicesData.map(function (d) {
           console.log(d);
           return d;
@@ -50,7 +50,7 @@ const General = (props) => {
           return d;
         });
         break;
-      case "Delivery Services":
+      case "Delivery Tracking":
         arr = deliveryServicesData.map(function (d) {
           console.log(d);
           return d;
@@ -81,6 +81,7 @@ const General = (props) => {
       >
         <Image source={item.img} style={styles.renderItemImage} />
         <Text style={styles.renderItemText}>{item.services}</Text>
+        
       </TouchableOpacity>
     </View>
   );
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
     width: "42%",
     borderRadius: 15,
   },
-  renderItemImage: { width: 80, height: 80, alignSelf: "center" },
+  renderItemImage: { width: 70, height: 70, alignSelf: "center" },
   renderItemText: {
     fontSize: 12,
     // fontWeight: "bold",
