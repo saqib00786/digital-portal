@@ -50,7 +50,7 @@ const General = (props) => {
           return d;
         });
         break;
-      case "Delivery Tracking":
+      case "Courier Tracking":
         arr = deliveryServicesData.map(function (d) {
           console.log(d);
           return d;

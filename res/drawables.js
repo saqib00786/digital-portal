@@ -63,10 +63,16 @@ export const BPSC_LOGO = require(PATH + "/BPSC.png");
 export const AJKPSC_LOGO = require(PATH + "/AJKPSC.png");
 
 //DELIVERY SERVICES SCREEN LOGO
-export const PAKISTAN_POST_LOGO = require(PATH + "/pakistan_post.png");
+export const PAKISTAN_POST_LOGO = require(PATH + "/PP.png");
 export const TCS_LOGO = require(PATH + "/tcs.png");
 export const LEOPARDS_LOGO = require(PATH + "/leopards.png");
-export const DHL_LOGO = require(PATH + "/dhl.png");
+export const DHL_LOGO = require(PATH + "/DHL.png");
+export const FEDEX_LOGO = require(PATH + "/FEDEX.png");
+export const M_and_P_LOGO = require(PATH + "/MP.png");
+export const CAL_COR_LOGO = require(PATH + "/CALL_COR.png");
+export const DCS_LOGO = require(PATH + "/DCS.png");
+export const POSTAL_CODES_LOGO = require(PATH + "/POST_CODES.png");
+
 
 //GOVERNMENT INITIATIVES SERVICES SCREEN LOGO
 export const EHSAAS_PROGRAM_LOGO = require(PATH + "/ehsaas_program.png");

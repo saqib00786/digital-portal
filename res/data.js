@@ -48,6 +48,7 @@ import {
   MEPCO_LOGO,
   SEPCO_LOGO,
   KHI_WASA_LOGO,  FSD_WASA_LOGO, PEW_WASA_LOGO,  LHR_WASA_LOGO, RWP_WASA_LOGO, SF_LOGO, SSGC_LOGO, NAYATEL_LOGO,
+  DCS_LOGO, CAL_COR_LOGO, FEDEX_LOGO, M_and_P_LOGO, POSTAL_CODES_LOGO, 
 } from "../res/drawables";
 
 //MAIN SCREEN DATA
@@ -58,7 +59,7 @@ export const data = [
     imgbg: UTIL_BG,
   },
   {
-    source: "Delivery Tracking",
+    source: "Courier Tracking",
     screen: "General",
     imgbg: DELV_BG,
   },
@@ -386,17 +387,17 @@ export const jobData = [
 //DELIVERY SERVICES SCREEN DATA
 export const deliveryServicesData = [
   {
-    services: "PAKISTAN POST",
+    services: "Pakistan Post",
     img: PAKISTAN_POST_LOGO,
-    uri: "https://www.pakpost.gov.pk/",
+    uri: "https://ep.gov.pk/",
   },
   {
     services: "TCS",
     img: TCS_LOGO,
-    uri: "https://www.tcsexpress.com/",
+    uri: "https://www.tcsexpress.com/tracking",
   },
   {
-    services: "LEOPARD",
+    services: "Leopards",
     img: LEOPARDS_LOGO,
     uri: "https://www.leopardscourier.com/",
   },
@@ -404,6 +405,31 @@ export const deliveryServicesData = [
     services: "DHL",
     img: DHL_LOGO,
     uri: "https://www.dhl.com/pk-en/home.html?locale=true",
+  },
+  {
+    services: "FedEx",
+    img: FEDEX_LOGO,
+    uri: "https://www.fedex.com/en-pk/home.html",
+  },
+  {
+    services: "M&P",
+    img: M_and_P_LOGO,
+    uri: "https://mulphilog.com/",
+  },
+  {
+    services: "Call Courier",
+    img: CAL_COR_LOGO,
+    uri: "https://callcourier.com.pk/tracking/",
+  },
+  {
+    services: "DCS",
+    img: DCS_LOGO,
+    uri: "https://dcscourier.com/Tracking",
+  },
+  {
+    services: "Post Codes",
+    img: POSTAL_CODES_LOGO,
+    uri: "https://www.pakpost.gov.pk/postcodes.php",
   },
 ];
 
