@@ -33,10 +33,7 @@ const Main = (props) => {
       console.log("Is connected?", state.isConnected);
 
       if (state.isConnected === true) {
-        if (props.navigation.canGoBack()) {
-          props.navigation.goBack();
-          return;
-        }
+        props.navigation.navigate("Main");
       } else {
         props.navigation.navigate("NetworkErrorScreen");
       }
