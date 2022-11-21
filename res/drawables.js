@@ -4,11 +4,13 @@ export const COLOR_BLACK = "#000000";
 export const COLOR_BLUE = "#2294f2";
 export const COLOR_LIGHT_BLUE = "#a6d4f9";
 export const COLOR_GRAY = "#364144";
-export const PAK_GOVT_COLOR = "#01411c";
+export const PAK_GOVT_GREEN_COLOR = "#01411c";
+export const PAK_GOVT_YELLOW_COLOR = "#fcc123";
+
 
 const PATH = "../assets";
 //SPLASJH SCREEN LOGO
-export const SPLASH_LOGO = require(PATH + "/dp_logo.png");
+export const SPLASH_LOGO = require(PATH + "/digi_pak.png");
 
 //UTILITY SERVICES SCREEN LOGOS
 export const SUI_GAS_LOGO = require(PATH + "/SuiGas.png");
@@ -45,8 +47,8 @@ export const POLICE_LOGO = require(PATH + "/police.png");
 export const MOD_LOGO = require(PATH + "/MOD.png");
 
 //EDUCATION SCREEN LOGOS
-export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
-export const FBISE_LOGO = require(PATH + "/fbise.png");
+
+export const FBISE_LOGO = require(PATH + "/FBISE.png");
 export const HEC_LOGO = require(PATH + "/hec.png");
 export const MDCAT_LOGO = require(PATH + "/MDCAT.png");
 export const NTS_LOGO = require(PATH + "/NTS.png");
@@ -78,8 +80,7 @@ export const POSTAL_CODES_LOGO = require(PATH + "/POST_CODES.png");
 export const EHSAAS_PROGRAM_LOGO = require(PATH + "/ehsaas_program.png");
 export const KAMYAB_JAWAN_LOGO = require(PATH + "/kamyab_jawan_logo.png");
 export const ROSHAN_DIGITAL_LOGO = require(PATH + "/roshan_digital_logo.png");
-export const PAKISTAN_CITIZEN_PORTAL_LOGO = require(PATH +
-  "/pakistanCitizenPortal.png");
+export const PAKISTAN_CITIZEN_PORTAL_LOGO = require(PATH +"/pakistanCitizenPortal.png");
 export const EROZGAR_LOGO = require(PATH + "/erozgar.png");
 export const BENAZIR_INCOME_LOGO = require(PATH + "/benazirIncome.png");
 export const E_LEARN_LOGO = require(PATH + "/e_learn.png");
@@ -102,3 +103,39 @@ export const JOBS_BG = require(PATH + "/jobs.png");
 export const DELV_BG = require(PATH + "/delivery.png");
 export const UTIL_BG = require(PATH + "/utility.png");
 export const GOVIN_BG = require(PATH + "/govt_init.png");
+export const BOARDS_BG = require(PATH + "/board_results.png");
+
+
+
+//BOARD RESULTS SCREEN LOGO
+export const BISE_RWP = require(PATH + "/bise_rwp.png");
+export const BISE_SWL = require(PATH + "/BISE_SWL.gif");
+export const BISE_SGD = require(PATH + "/BISE_SGD.png");
+export const BISE_ABT = require(PATH + "/BISE_ABT.png");
+export const BISE_AGK = require(PATH + "/BISE_AGK.png");
+export const BISE_BAN = require(PATH + "/BISE_BAN.png");
+export const BISE_DGK = require(PATH + "/BISE_DGK.png");
+export const BISE_DIK = require(PATH + "/BISE_DIK.png");
+export const BISE_FSD = require(PATH + "/BISE_FSD.png");
+export const BISE_GJW = require(PATH + "/BISE_GJW.png");
+export const BISE_HYD = require(PATH + "/BISE_HYD.png");
+export const BISE_KCH = require(PATH + "/BISE_KCH.png");
+export const BISE_KHT = require(PATH + "/BISE_KHT.png");
+export const BISE_LHR = require(PATH + "/BISE_LHR.png");
+export const BISE_LRK= require(PATH + "/BISE_LRK.png");
+export const BISE_MLK = require(PATH + "/BISE_MLK.png");
+export const BISE_MPK = require(PATH + "/BISE_MPK.png");
+export const BISE_MUL = require(PATH + "/BISE_MUL.png");
+export const BISE_QTA = require(PATH + "/BISE_QTA.png");
+export const BISE_SWT = require(PATH + "/BISE_SWT.png");
+export const BISE_SUK = require(PATH + "/BISE_SUK.png");
+export const BISE_BWP = require(PATH + "/BISE_BWP.png");
+export const BISE_AJK = require(PATH + "/BISE_AJK.png");
+// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
+// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
+// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
+// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
+// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
+// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
+// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
+

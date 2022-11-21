@@ -14,11 +14,14 @@ import {
   utilityServicesData,
   govtInitiativesData,
   defenceDataPAF,
+  boardsResultsData
 } from "../../../res/data";
 import {
   COLOR_BLACK,
   COLOR_BLUE,
-  COLOR_LIGHT_BLUE,
+ PAK_GOVT_YELLOW_COLOR,
+  COLOR_GRAY,
+  PAK_GOVT_GREEN_COLOR
 } from "../../../res/drawables";
 
 const General = (props) => {
@@ -44,7 +47,7 @@ const General = (props) => {
           return d;
         });
         break;
-      case "Job":
+      case "Jobs":
         arr = jobData.map(function (d) {
           console.log(d);
           return d;
@@ -58,6 +61,11 @@ const General = (props) => {
         break;
       case "Govt. Initiatives":
         arr = govtInitiativesData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+      case "Board Results":
+        arr = boardsResultsData.map(function (d){
           console.log(d);
           return d;
         });
@@ -77,11 +85,12 @@ const General = (props) => {
             title: item.services,
           })
         }
-        //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
+      //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
         <Image source={item.img} style={styles.renderItemImage} />
         <Text style={styles.renderItemText}>{item.services}</Text>
-        
+        <Text style={styles.renderItemText2}>{item.sub_services}</Text>
+
       </TouchableOpacity>
     </View>
   );
@@ -108,7 +117,7 @@ const styles = StyleSheet.create({
   renderItemView: {
     // backgroundColor: COLOR_LIGHT_BLUE,
     borderWidth: 1,
-    borderColor: COLOR_LIGHT_BLUE,
+    borderColor: PAK_GOVT_YELLOW_COLOR,
     margin: "4%",
     padding: "3%",
     // marginTop: 18,
@@ -131,4 +140,13 @@ const styles = StyleSheet.create({
     color: COLOR_BLUE,
     alignSelf: "center",
   },
+  renderItemText2:{
+    fontSize: 8,
+    // fontWeight: "bold",
+    // fontFamily: "serif",
+    fontStyle:"italic",
+    color: COLOR_GRAY,
+    alignSelf: "center",
+    marginTop: "4%",
+  }
 });
