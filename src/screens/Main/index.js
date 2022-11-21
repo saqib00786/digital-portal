@@ -5,18 +5,15 @@ import {
   Text,
   StyleSheet,
   FlatList,
-  Image,
   TouchableOpacity,
   ImageBackground,
   Dimensions,
 } from "react-native";
 import { data } from "../../../res/data";
 import {
-  COLOR_BLACK,
-  COLOR_BLUE,
-  COLOR_GRAY,
-  COLOR_LIGHT_BLUE,
   COLOR_WHITE,
+  PAK_GOVT_GREEN_COLOR,
+  PAK_GOVT_YELLOW_COLOR
 } from "../../../res/drawables";
 import NetInfo from "@react-native-community/netinfo";
 
@@ -127,14 +124,13 @@ const styles = StyleSheet.create({
   topHeading1: {
     fontFamily: "sans-serif",
     fontSize: 15,
-    // fontWeight: "400",
-    color: COLOR_WHITE,
+    color: PAK_GOVT_YELLOW_COLOR,
   },
   topHeading2: {
     fontFamily: "sans-serif",
     fontSize: 20,
     fontWeight: "bold",
-    color: COLOR_WHITE,
+    color:PAK_GOVT_YELLOW_COLOR,
   },
   gradientContainer: {
     width: "100%",
@@ -144,12 +140,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   textHeader: {
-    //margin: 8,
-    //marginTop: 40,
-    paddingTop: "12%",
-    padding: "5%",
-    backgroundColor: COLOR_BLUE,
-    // borderBottomEndRadius: 40,
-    height: 110,
+    paddingLeft: "5%",
+    backgroundColor: PAK_GOVT_GREEN_COLOR,
+    height: '15%',
+    justifyContent:'center',
+    paddingTop:'8%'
   },
 });
