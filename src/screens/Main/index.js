@@ -13,7 +13,7 @@ import { data } from "../../../res/data";
 import {
   COLOR_WHITE,
   PAK_GOVT_GREEN_COLOR,
-  PAK_GOVT_YELLOW_COLOR
+  PAK_GOVT_YELLOW_COLOR,
 } from "../../../res/drawables";
 import NetInfo from "@react-native-community/netinfo";
 
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     fontFamily: "sans-serif",
     fontSize: 20,
     fontWeight: "bold",
-    color:PAK_GOVT_YELLOW_COLOR,
+    color: PAK_GOVT_YELLOW_COLOR,
   },
   gradientContainer: {
     width: "100%",
@@ -142,8 +142,8 @@ const styles = StyleSheet.create({
   textHeader: {
     paddingLeft: "5%",
     backgroundColor: PAK_GOVT_GREEN_COLOR,
-    height: '15%',
-    justifyContent:'center',
-    paddingTop:'8%'
+    height: "15%",
+    justifyContent: "center",
+    paddingTop: "8%",
   },
 });
