@@ -15,7 +15,7 @@ import {
   govtInitiativesData,
   defenceDataPAF,
   boardsResultsData,
-  railwaysData
+  railwaysData, busTicketData
 } from "../../../res/data";
 import {
   COLOR_BLACK,
@@ -74,6 +74,12 @@ const General = (props) => {
         break;
       case "Railways":
         arr = railwaysData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
+      case "Bus Tickets":
+        arr = busTicketData.map(function (d) {
           console.log(d);
           return d;
         });

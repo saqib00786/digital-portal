@@ -9,7 +9,8 @@ import {
   BOARDS_BG,
   BISE_SWL, BISE_RWP, BISE_SGD, BISE_ABT, BISE_AGK, BISE_BAN, BISE_DGK, BISE_DIK, BISE_FSD, BISE_GJW,
   BISE_HYD, BISE_KCH, BISE_KHT, BISE_LHR, BISE_LRK, BISE_MLK, BISE_MPK, BISE_MUL, BISE_QTA, BISE_SWT, BISE_SUK, BISE_BWP, BISE_AJK,
-  RAILWAY_BG, PAK_RAIL_E_TICKET, YOUR_FARE,TRAIN_TIMING
+  RAILWAY_BG, PAK_RAIL_E_TICKET, YOUR_FARE, TRAIN_TIMING,
+  Bus_BG, DAEWOO_LOGO, BOOKKARU_LOGO, BOOKME_LOGO,SASTITICKET_LOGO
 } from "../res/drawables";
 
 //MAIN SCREEN DATA
@@ -59,6 +60,11 @@ export const data = [
     source: "Railways",
     screen: "General",
     imgbg: RAILWAY_BG,
+  },
+  {
+    source: "Bus Tickets",
+    screen: "General",
+    imgbg: Bus_BG,
   },
 ];
 
@@ -648,4 +654,29 @@ export const railwaysData = [
   //   img: BISE_FSD,
   //   uri: "http://result.bisefsd.edu.pk/",
   // },
+]
+
+
+//Bus Tickets screen Data
+export const busTicketData = [
+  {
+    services: "Daewoo Express",
+    img: DAEWOO_LOGO,
+    uri: "https://daewoo.com.pk/",
+  },
+  {
+    services: "Bookme",
+    img: BOOKME_LOGO,
+    uri: "https://bookme.pk/buy-bus-tickets-online",
+  },
+  {
+    services: "Bookkaru",
+    img: BOOKKARU_LOGO,
+    uri: "https://www.bookkaru.com/",
+  },
+  {
+    services: "Sasta Ticket",
+    img: SASTITICKET_LOGO,
+    uri: "https://www.bookkaru.com/",
+  },
 ]
