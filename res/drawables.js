@@ -45,7 +45,7 @@ export const MOD_LOGO = require(PATH + "/MOD.png");
 
 //EDUCATION SCREEN LOGOS
 
-export const FBISE_LOGO = require(PATH + "/fbise.png");
+export const FBISE_LOGO = require(PATH + "/FBISE.png");
 export const HEC_LOGO = require(PATH + "/hec.png");
 export const MDCAT_LOGO = require(PATH + "/MDCAT.png");
 export const NTS_LOGO = require(PATH + "/NTS.png");
@@ -65,7 +65,7 @@ export const AJKPSC_LOGO = require(PATH + "/AJKPSC.png");
 export const PAKISTAN_POST_LOGO = require(PATH + "/PP.png");
 export const TCS_LOGO = require(PATH + "/tcs.png");
 export const LEOPARDS_LOGO = require(PATH + "/leopards.png");
-export const DHL_LOGO = require(PATH + "/dhl.png");
+export const DHL_LOGO = require(PATH + "/DHL.png");
 export const FEDEX_LOGO = require(PATH + "/FEDEX.png");
 export const M_and_P_LOGO = require(PATH + "/MP.png");
 export const CAL_COR_LOGO = require(PATH + "/CALL_COR.png");
@@ -92,19 +92,11 @@ export const MOFA_LOGO = require(PATH + "/MOFA.png");
 export const FBR_LOGO = require(PATH + "/FBR.png");
 export const CUSTOM_LOGO = require(PATH + "/customs.png");
 
-//MAIN SCREEN MODIFIED LOGOS
-export const EDU_BG = require(PATH + "/edu.png");
-export const DEF_BG = require(PATH + "/defense.png");
-export const GOVT_BG = require(PATH + "/govt_sectors.png");
-export const JOBS_BG = require(PATH + "/jobs.png");
-export const DELV_BG = require(PATH + "/delivery.png");
-export const UTIL_BG = require(PATH + "/utility.png");
-export const GOVIN_BG = require(PATH + "/govt_init.png");
-export const BOARDS_BG = require(PATH + "/board_results.png");
+
 
 //BOARD RESULTS SCREEN LOGO
 export const BISE_RWP = require(PATH + "/bise_rwp.png");
-export const BISE_SWL = require(PATH + "/BISE_SWL.gif");
+export const BISE_SWL = require(PATH + "/BISE_SWL.png");
 export const BISE_SGD = require(PATH + "/BISE_SGD.png");
 export const BISE_ABT = require(PATH + "/BISE_ABT.png");
 export const BISE_AGK = require(PATH + "/BISE_AGK.png");
@@ -126,10 +118,21 @@ export const BISE_SWT = require(PATH + "/BISE_SWT.png");
 export const BISE_SUK = require(PATH + "/BISE_SUK.png");
 export const BISE_BWP = require(PATH + "/BISE_BWP.png");
 export const BISE_AJK = require(PATH + "/BISE_AJK.png");
-// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
-// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
-// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
-// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
-// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
-// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
-// export const BISE_RWP_LOGO = require(PATH + "/bise_rwp.png");
+
+//Pakistan Railways Screen Data
+export const PAK_RAIL_E_TICKET = require(PATH + "/PR_E_TICKET.png")
+export const YOUR_FARE = require(PATH + "/FARE.png")
+export const TRAIN_TIMING = require(PATH + "/TRAIN_TIMING.png")
+
+
+
+//MAIN SCREEN MODIFIED LOGOS
+export const EDU_BG = require(PATH + "/edu.png");
+export const DEF_BG = require(PATH + "/defense.png");
+export const GOVT_BG = require(PATH + "/govt_sectors.png");
+export const JOBS_BG = require(PATH + "/jobs.png");
+export const DELV_BG = require(PATH + "/delivery.png");
+export const UTIL_BG = require(PATH + "/utility.png");
+export const GOVIN_BG = require(PATH + "/govt_init.png");
+export const BOARDS_BG = require(PATH + "/board_results.png");
+export const RAILWAY_BG = require(PATH + "/PAK_RAIL.jpg");

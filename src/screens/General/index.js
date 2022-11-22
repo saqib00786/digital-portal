@@ -14,12 +14,13 @@ import {
   utilityServicesData,
   govtInitiativesData,
   defenceDataPAF,
-  boardsResultsData
+  boardsResultsData,
+  railwaysData
 } from "../../../res/data";
 import {
   COLOR_BLACK,
   COLOR_BLUE,
- PAK_GOVT_YELLOW_COLOR,
+  PAK_GOVT_YELLOW_COLOR,
   COLOR_GRAY,
   PAK_GOVT_GREEN_COLOR
 } from "../../../res/drawables";
@@ -64,8 +65,15 @@ const General = (props) => {
           console.log(d);
           return d;
         });
+        break;
       case "Board Results":
-        arr = boardsResultsData.map(function (d){
+        arr = boardsResultsData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
+      case "Railways":
+        arr = railwaysData.map(function (d) {
           console.log(d);
           return d;
         });
@@ -140,11 +148,11 @@ const styles = StyleSheet.create({
     color: COLOR_BLUE,
     alignSelf: "center",
   },
-  renderItemText2:{
+  renderItemText2: {
     fontSize: 8,
     // fontWeight: "bold",
     // fontFamily: "serif",
-    fontStyle:"italic",
+    fontStyle: "italic",
     color: COLOR_GRAY,
     alignSelf: "center",
     marginTop: "4%",
