@@ -1,19 +1,20 @@
 import {
-  AJKPSC_LOGO,BENAZIR_INCOME_LOGO,BPSC_LOGO, CSS_LOGO,DHL_LOGO,ECAT_LOGO,EHSAAS_PROGRAM_LOGO,
-  EROZGAR_LOGO,E_LEARN_LOGO,FBISE_LOGO,FPSC_LOGO,GAT_LOGO,
-  HEC_LOGO,KAMYAB_JAWAN_LOGO,KPPSC_LOGO,LEOPARDS_LOGO,MDCAT_LOGO,NTS_LOGO,PAKISTAN_CITIZEN_PORTAL_LOGO,PAKISTAN_POST_LOGO,PPSC_LOGO,PTCL_LOGO,
-  ROSHAN_DIGITAL_LOGO,SPSC_LOGO,SUI_GAS_LOGO,TCS_LOGO,EDU_BG,DEF_BG,GOVT_BG,JOBS_BG,UTIL_BG,DELV_BG,GOVIN_BG,
-  K_ELECTRIC_LOGO,CHARJI_LOGO,IESCO_LOGO,LESCO_LOGO,FESCO_LOGO,GEPCO_LOGO,HESCO_LOGO,PESCO_LOGO,QESCO_LOGO,TESCO_LOGO,MEPCO_LOGO,SEPCO_LOGO,
-  KHI_WASA_LOGO,  FSD_WASA_LOGO, PEW_WASA_LOGO,  LHR_WASA_LOGO, RWP_WASA_LOGO, SF_LOGO, SSGC_LOGO, NAYATEL_LOGO,
-  DCS_LOGO, CAL_COR_LOGO, FEDEX_LOGO, M_and_P_LOGO, POSTAL_CODES_LOGO, 
+  AJKPSC_LOGO, BENAZIR_INCOME_LOGO, BPSC_LOGO, CSS_LOGO, DHL_LOGO, ECAT_LOGO, EHSAAS_PROGRAM_LOGO,
+  EROZGAR_LOGO, E_LEARN_LOGO, FBISE_LOGO, FPSC_LOGO, GAT_LOGO,
+  HEC_LOGO, KAMYAB_JAWAN_LOGO, KPPSC_LOGO, LEOPARDS_LOGO, MDCAT_LOGO, NTS_LOGO, PAKISTAN_CITIZEN_PORTAL_LOGO, PAKISTAN_POST_LOGO, PPSC_LOGO, PTCL_LOGO,
+  ROSHAN_DIGITAL_LOGO, SPSC_LOGO, SUI_GAS_LOGO, TCS_LOGO, EDU_BG, DEF_BG, GOVT_BG, JOBS_BG, UTIL_BG, DELV_BG, GOVIN_BG,
+  K_ELECTRIC_LOGO, CHARJI_LOGO, IESCO_LOGO, LESCO_LOGO, FESCO_LOGO, GEPCO_LOGO, HESCO_LOGO, PESCO_LOGO, QESCO_LOGO, TESCO_LOGO, MEPCO_LOGO, SEPCO_LOGO,
+  KHI_WASA_LOGO, FSD_WASA_LOGO, PEW_WASA_LOGO, LHR_WASA_LOGO, RWP_WASA_LOGO, SF_LOGO, SSGC_LOGO, NAYATEL_LOGO,
+  DCS_LOGO, CAL_COR_LOGO, FEDEX_LOGO, M_and_P_LOGO, POSTAL_CODES_LOGO,
   BOARDS_BG,
-  BISE_SWL, BISE_RWP,BISE_SGD, BISE_ABT, BISE_AGK, BISE_BAN, BISE_DGK, BISE_DIK, BISE_FSD, BISE_GJW,
-  BISE_HYD, BISE_KCH, BISE_KHT, BISE_LHR, BISE_LRK,BISE_MLK,BISE_MPK,BISE_MUL,BISE_QTA,BISE_SWT, BISE_SUK, BISE_BWP, BISE_AJK
+  BISE_SWL, BISE_RWP, BISE_SGD, BISE_ABT, BISE_AGK, BISE_BAN, BISE_DGK, BISE_DIK, BISE_FSD, BISE_GJW,
+  BISE_HYD, BISE_KCH, BISE_KHT, BISE_LHR, BISE_LRK, BISE_MLK, BISE_MPK, BISE_MUL, BISE_QTA, BISE_SWT, BISE_SUK, BISE_BWP, BISE_AJK,
+  RAILWAY_BG, PAK_RAIL_E_TICKET, YOUR_FARE,TRAIN_TIMING
 } from "../res/drawables";
 
 //MAIN SCREEN DATA
 export const data = [
- 
+
   {
     source: "Govt. Initiatives",
     screen: "General",
@@ -53,6 +54,11 @@ export const data = [
     source: "Board Results",
     screen: "General",
     imgbg: BOARDS_BG,
+  },
+  {
+    source: "Railways",
+    screen: "General",
+    imgbg: RAILWAY_BG,
   },
 ];
 
@@ -472,150 +478,174 @@ export const govtSecCustom = [
 ];
 
 //Board Results Screen Data
-export const boardsResultsData=[
+export const boardsResultsData = [
   {
     services: "BISE FSD",
-    sub_services:"Faisalabad Board",
+    sub_services: "Faisalabad Board",
     img: BISE_FSD,
     uri: "http://result.bisefsd.edu.pk/",
   },
   {
     services: "BISE LHR",
-    sub_services:"Lahore Board",
+    sub_services: "Lahore Board",
     img: BISE_LHR,
     uri: "http://result.biselahore.com/",
   },
   {
     services: "BISE BWP",
-    sub_services:"Bahawalpur Board",
+    sub_services: "Bahawalpur Board",
     img: BISE_BWP,
     uri: "https://bisebwp.edu.pk/",
   },
   {
     services: "BISE DG Khan",
-    sub_services:"G.G.Khan Board",
+    sub_services: "G.G.Khan Board",
     img: BISE_DGK,
     uri: "https://www.bisedgkhan.edu.pk/#",
   },
   {
     services: "BISE GRW",
-    sub_services:"Gujranwala Board",
+    sub_services: "Gujranwala Board",
     img: BISE_GJW,
     uri: "https://www.bisegrw.edu.pk/prev-years-result.html",
   },
   {
     services: "BISE MUL",
-    sub_services:"Multan Board",
-    img:BISE_MUL,
+    sub_services: "Multan Board",
+    img: BISE_MUL,
     uri: "https://results.bisemultan.edu.pk/",
   },
   {
     services: "BISE SWL",
-    sub_services:"Sahiwal Board",
+    sub_services: "Sahiwal Board",
     img: BISE_SWL,
     uri: "https://bisesahiwal.edu.pk/allresult/",
   },
   {
     services: "BISE RWP",
-    sub_services:"Rawalpindi Board",
+    sub_services: "Rawalpindi Board",
     img: BISE_RWP,
     uri: "https://results.biserawalpindi.edu.pk/",
   },
   {
     services: "BISE SGD",
-    sub_services:"Sargodha Board",
+    sub_services: "Sargodha Board",
     img: BISE_SGD,
     uri: "https://bisesargodha.edu.pk/content/BoardResult.aspx",
   },
   {
     services: "BSEK",
-    sub_services:"Karachi Board",
+    sub_services: "Karachi Board",
     img: BISE_KCH,
     uri: "https://biek.edu.pk/results.asp",
   },
   {
     services: "BISE SUK",
-    sub_services:"Sukkur Board",
+    sub_services: "Sukkur Board",
     img: BISE_SUK,
     uri: "http://www.bisesuksindh.edu.pk/results.html",
   },
   {
     services: "BISE HYD",
-    sub_services:"Hyderabad Board",
-    img:BISE_HYD,
+    sub_services: "Hyderabad Board",
+    img: BISE_HYD,
     uri: "http://bisehyd.com/#",
   },
   {
     services: "BISE LRK",
-    sub_services:"Larkana Board",
+    sub_services: "Larkana Board",
     img: BISE_LRK,
     uri: "https://www.biselrk.edu.pk/ResultsHSC.aspx",
   },
   {
     services: "BISE MPK",
-    sub_services:"Mirpur Khas Board",
-    img:BISE_MPK,
+    sub_services: "Mirpur Khas Board",
+    img: BISE_MPK,
     uri: "http://bisemirpurkhas.com/Result.php",
   },
   {
     services: "AKUEB",
-    sub_services:"Aga Khan Board",
+    sub_services: "Aga Khan Board",
     img: BISE_AGK,
     uri: "https://examinationboard.aku.edu/services/Pages/online-results.aspx",
   },
   {
     services: "BISE ATD",
-    sub_services:"Abbottabad Board",
+    sub_services: "Abbottabad Board",
     img: BISE_ABT,
     uri: "https://biseatd.edu.pk/all_results.php",
   },
   {
     services: "BISEB",
-    sub_services:"Bannu Board",
+    sub_services: "Bannu Board",
     img: BISE_BAN,
     uri: "http://biseb.edu.pk/results.php",
   },
   {
     services: "BISE DIK",
-    sub_services:"D.I Khan Board",
+    sub_services: "D.I Khan Board",
     img: BISE_DIK,
     uri: "https://www.bisedik.edu.pk/Default.aspx#",
   },
   {
     services: "BISE KHT",
-    sub_services:"Kohat Board",
+    sub_services: "Kohat Board",
     img: BISE_KHT,
     uri: "http://www.bisekt.edu.pk/result",
   },
   {
     services: "BISE MKD",
-    sub_services:"Malakand Board",
-    img:BISE_MLK,
+    sub_services: "Malakand Board",
+    img: BISE_MLK,
     uri: "https://bisemalakand.edu.pk/result/latest-annual",
   },
   {
     services: "BISEP SWT",
-    sub_services:"Sawat Board",
+    sub_services: "Sawat Board",
     img: BISE_SWT,
     uri: "https://www.bisess.edu.pk/site/home/application-tracking",
   },
   {
     services: "BISE QTA",
-    sub_services:"Quetta Board",
+    sub_services: "Quetta Board",
     img: BISE_QTA,
     uri: "https://bbiseqta.edu.pk/Result",
   },
   {
     services: "FBISE",
-    sub_services:"Fedeal/GB Board",
+    sub_services: "Fedeal/GB Board",
     img: FBISE_LOGO,
     uri: "https://www.fbise.edu.pk/result-main.php",
   },
   {
     services: "BISE AJK",
-    sub_services:"Azad & Jammu Kashmir Board",
+    sub_services: "Azad & Jammu Kashmir Board",
     img: BISE_AJK,
     uri: "https://ajkbise.net/results.php",
   },
 
+]
+
+//Railways Screen Data
+export const railwaysData = [
+  {
+    services: "e-Ticket",
+    img: PAK_RAIL_E_TICKET,
+    uri: "https://www.pakrail.gov.pk/Membership/Member_Login.aspx",
+  },
+  {
+    services: "Fares",
+    img: YOUR_FARE,
+    uri: "https://www.pakrail.gov.pk/FreightRates.aspx",
+  },
+  {
+    services: "Train Timings",
+    img: TRAIN_TIMING,
+    uri: "https://www.pakrail.gov.pk/TrainTiming.aspx",
+  },
+  // {
+  //   services: "Train Tracking",
+  //   img: BISE_FSD,
+  //   uri: "http://result.bisefsd.edu.pk/",
+  // },
 ]
