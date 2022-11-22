@@ -45,7 +45,7 @@ export const MOD_LOGO = require(PATH + "/MOD.png");
 
 //EDUCATION SCREEN LOGOS
 
-export const FBISE_LOGO = require(PATH + "/FBISE.png");
+export const FBISE_LOGO = require(PATH + "/fbise.png");
 export const HEC_LOGO = require(PATH + "/hec.png");
 export const MDCAT_LOGO = require(PATH + "/MDCAT.png");
 export const NTS_LOGO = require(PATH + "/NTS.png");
@@ -65,7 +65,7 @@ export const AJKPSC_LOGO = require(PATH + "/AJKPSC.png");
 export const PAKISTAN_POST_LOGO = require(PATH + "/PP.png");
 export const TCS_LOGO = require(PATH + "/tcs.png");
 export const LEOPARDS_LOGO = require(PATH + "/leopards.png");
-export const DHL_LOGO = require(PATH + "/DHL.png");
+export const DHL_LOGO = require(PATH + "/dhl.png");
 export const FEDEX_LOGO = require(PATH + "/FEDEX.png");
 export const M_and_P_LOGO = require(PATH + "/MP.png");
 export const CAL_COR_LOGO = require(PATH + "/CALL_COR.png");
@@ -91,8 +91,6 @@ export const VISA_LOGO = require(PATH + "/visa.png");
 export const MOFA_LOGO = require(PATH + "/MOFA.png");
 export const FBR_LOGO = require(PATH + "/FBR.png");
 export const CUSTOM_LOGO = require(PATH + "/customs.png");
-
-
 
 //BOARD RESULTS SCREEN LOGO
 export const BISE_RWP = require(PATH + "/bise_rwp.png");
@@ -120,11 +118,9 @@ export const BISE_BWP = require(PATH + "/BISE_BWP.png");
 export const BISE_AJK = require(PATH + "/BISE_AJK.png");
 
 //Pakistan Railways Screen Data
-export const PAK_RAIL_E_TICKET = require(PATH + "/PR_E_TICKET.png")
-export const YOUR_FARE = require(PATH + "/FARE.png")
-export const TRAIN_TIMING = require(PATH + "/TRAIN_TIMING.png")
-
-
+export const PAK_RAIL_E_TICKET = require(PATH + "/PR_E_TICKET.png");
+export const YOUR_FARE = require(PATH + "/FARE.png");
+export const TRAIN_TIMING = require(PATH + "/TRAIN_TIMING.png");
 
 //MAIN SCREEN MODIFIED LOGOS
 export const EDU_BG = require(PATH + "/edu.png");
