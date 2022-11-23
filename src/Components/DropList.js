@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import SelectList from "react-native-dropdown-select-list";
+import { PAK_GOVT_YELLOW_COLOR, COLOR_GRAY } from "../../res/drawables";
 
 const DropList = ({ title, logo, data, onSelect, setSelected }) => {
   return (
@@ -12,8 +13,13 @@ const DropList = ({ title, logo, data, onSelect, setSelected }) => {
       <SelectList
         setSelected={setSelected}
         data={data}
+        boxStyles={{ borderColor: PAK_GOVT_YELLOW_COLOR }}
+        dropdownStyles={{ borderColor: PAK_GOVT_YELLOW_COLOR }}
+        placeholdeColor="red"
+        inputStyles={{ color: COLOR_GRAY }}
         onSelect={() => {
           onSelect();
+
         }}
       />
     </View>
@@ -26,13 +32,14 @@ const styles = StyleSheet.create({
   viewDropDown: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 5,
-    paddingBottom: 5,
+    alignItems: "center",
+    height: 40,
+
   },
   textDropDown: {
-    fontSize: 15,
+    fontSize: 15, alignSelf: "center",
     //fontFamily: "serif",
-    marginTop: 10,
+    //marginTop: "5%",
   },
-  imageDropDown: { width: "10%", height: "100%" },
+  imageDropDown: { width: 30, height: 30 },
 });
