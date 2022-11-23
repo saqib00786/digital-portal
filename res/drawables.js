@@ -3,7 +3,7 @@ export const COLOR_WHITE = "#ffffff";
 export const COLOR_BLACK = "#000000";
 export const COLOR_BLUE = "#2294f2";
 export const COLOR_LIGHT_BLUE = "#a6d4f9";
-export const COLOR_GRAY = "#364144";
+export const COLOR_GRAY = "#A9A9A9";
 export const PAK_GOVT_GREEN_COLOR = "#01411c";
 export const PAK_GOVT_YELLOW_COLOR = "#fcc123";
 
@@ -76,8 +76,7 @@ export const POSTAL_CODES_LOGO = require(PATH + "/POST_CODES.png");
 export const EHSAAS_PROGRAM_LOGO = require(PATH + "/ehsaas_program.png");
 export const KAMYAB_JAWAN_LOGO = require(PATH + "/kamyab_jawan_logo.png");
 export const ROSHAN_DIGITAL_LOGO = require(PATH + "/roshan_digital_logo.png");
-export const PAKISTAN_CITIZEN_PORTAL_LOGO = require(PATH +
-  "/pakistanCitizenPortal.png");
+export const PAKISTAN_CITIZEN_PORTAL_LOGO = require(PATH +"/pakistanCitizenPortal.png");
 export const EROZGAR_LOGO = require(PATH + "/erozgar.png");
 export const BENAZIR_INCOME_LOGO = require(PATH + "/benazirIncome.png");
 export const E_LEARN_LOGO = require(PATH + "/e_learn.png");

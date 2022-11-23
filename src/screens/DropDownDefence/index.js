@@ -49,35 +49,35 @@ const DropDownDefence = (props) => {
     <ScrollView>
       <View style={styles.container}>
         <DropList
-          title={"ARMY"}
+          title={"Pakistan Army"}
           logo={ARMY_LOGO}
           setSelected={setSelected}
           data={arr}
           onSelect={() => nav(selected, "Army")}
         />
         <DropList
-          title={"PAF"}
+          title={"Pakistan Air Force"}
           logo={AIRFORCE_LOGO}
           setSelected={setSelected}
           data={arr1}
           onSelect={() => nav(selected, "PAF")}
         />
         <DropList
-          title={"NAVY"}
+          title={"Pakistan Navy"}
           logo={NAVY_LOGO}
           setSelected={setSelected}
           data={arr2}
           onSelect={() => nav(selected, "NAVY")}
         />
         <DropList
-          title={"POLICE"}
+          title={"Police"}
           logo={POLICE_LOGO}
           setSelected={setSelected}
           data={arr3}
           onSelect={() => nav(selected, "POLICE")}
         />
         <DropList
-          title={"MOD"}
+          title={"Ministry of Defence"}
           logo={MOD_LOGO}
           setSelected={setSelected}
           data={arr4}
