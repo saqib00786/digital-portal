@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     // margin: 10,
-    marginTop: "7%",
+   
   },
   renderItemView: {
     // backgroundColor: COLOR_LIGHT_BLUE,

@@ -72,7 +72,7 @@ const Main = (props) => {
         <Text style={styles.topHeading2}>DIGITAL SERVICES PORTAL</Text>
       </View>
       <FlatList
-        style={{ margin: 12 }}
+        style={{alignSelf:'center'}}
         data={arr}
         numColumns={3}
         renderItem={renderItem}
@@ -85,9 +85,10 @@ const Main = (props) => {
 export default Main;
 const styles = StyleSheet.create({
   container: {
-    width: width,
-    height: height,
+    // width: width,
+    // height: height,
     justifyContent: "space-between",
+    flex:1
     //margin: 10,
     // marginTop: "7%",
   },

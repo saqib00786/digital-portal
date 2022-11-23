@@ -10,7 +10,7 @@ import {
   BISE_SWL, BISE_RWP, BISE_SGD, BISE_ABT, BISE_AGK, BISE_BAN, BISE_DGK, BISE_DIK, BISE_FSD, BISE_GJW,
   BISE_HYD, BISE_KCH, BISE_KHT, BISE_LHR, BISE_LRK, BISE_MLK, BISE_MPK, BISE_MUL, BISE_QTA, BISE_SWT, BISE_SUK, BISE_BWP, BISE_AJK,
   RAILWAY_BG, PAK_RAIL_E_TICKET, YOUR_FARE, TRAIN_TIMING,
-  Bus_BG, DAEWOO_LOGO, BOOKKARU_LOGO, BOOKME_LOGO,SASTITICKET_LOGO
+  Bus_BG, DAEWOO_LOGO, BOOKKARU_LOGO, BOOKME_LOGO,SASTITICKET_LOGO, EASYTICKET_LOGO, MYTICKET_LOGO, PK_BUSES_LOGO, BILAL_TRAVELS_LOGO
 } from "../res/drawables";
 
 //MAIN SCREEN DATA
@@ -665,6 +665,11 @@ export const busTicketData = [
     uri: "https://daewoo.com.pk/",
   },
   {
+    services: "Bilal Travels",
+    img: BILAL_TRAVELS_LOGO,
+    uri: "https://daewoo.com.pk/",
+  },
+  {
     services: "Bookme",
     img: BOOKME_LOGO,
     uri: "https://bookme.pk/buy-bus-tickets-online",
@@ -678,5 +683,21 @@ export const busTicketData = [
     services: "Sasta Ticket",
     img: SASTITICKET_LOGO,
     uri: "https://www.bookkaru.com/",
+  },
+  {
+    services: "Easy Tickets",
+    img:EASYTICKET_LOGO,
+    uri: "https://www.easytickets.pk/buses",
+  },
+  {
+    services: "PK Buses",
+    img: PK_BUSES_LOGO,
+    uri: "https://pkbuses.com/",
+  },
+  {
+    services: "My Tickets",
+    sub_services:"Faisal Movers",
+    img: MYTICKET_LOGO,
+    uri: "https://www.mytickets.pk/merchant/faisal-movers-online-booking",
   },
 ]
