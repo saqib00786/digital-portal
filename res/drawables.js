@@ -45,7 +45,7 @@ export const MOD_LOGO = require(PATH + "/MOD.png");
 
 //EDUCATION SCREEN LOGOS
 
-export const FBISE_LOGO = require(PATH + "/fbise.png");
+export const FBISE_LOGO = require(PATH + "/FBISE.png");
 export const HEC_LOGO = require(PATH + "/hec.png");
 export const MDCAT_LOGO = require(PATH + "/MDCAT.png");
 export const NTS_LOGO = require(PATH + "/NTS.png");
@@ -65,7 +65,7 @@ export const AJKPSC_LOGO = require(PATH + "/AJKPSC.png");
 export const PAKISTAN_POST_LOGO = require(PATH + "/PP.png");
 export const TCS_LOGO = require(PATH + "/tcs.png");
 export const LEOPARDS_LOGO = require(PATH + "/leopards.png");
-export const DHL_LOGO = require(PATH + "/dhl.png");
+export const DHL_LOGO = require(PATH + "/DHL.png");
 export const FEDEX_LOGO = require(PATH + "/FEDEX.png");
 export const M_and_P_LOGO = require(PATH + "/MP.png");
 export const CAL_COR_LOGO = require(PATH + "/CALL_COR.png");
