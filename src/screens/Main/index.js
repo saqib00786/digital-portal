@@ -1,28 +1,41 @@
 import { LinearGradient } from "expo-linear-gradient";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   View,
   Text,
   StyleSheet,
   FlatList,
-  Image,
   TouchableOpacity,
-  ImageBackground, Dimensions
+  ImageBackground,
+  Dimensions,
 } from "react-native";
 import { data } from "../../../res/data";
 import {
-  COLOR_BLACK,
-  COLOR_BLUE,
-  COLOR_GRAY,
-  COLOR_LIGHT_BLUE,
   COLOR_WHITE,
-
+  PAK_GOVT_GREEN_COLOR,
+  PAK_GOVT_YELLOW_COLOR,
 } from "../../../res/drawables";
+import NetInfo from "@react-native-community/netinfo";
 
-const { height, width } = Dimensions.get("window")
+const { height, width } = Dimensions.get("window");
 
 const Main = (props) => {
+  useEffect(() => {
+    connectionChecking();
+  }, []);
 
+  const connectionChecking = () => {
+    return NetInfo.addEventListener((state) => {
+      console.log("Connection type Main:", state.type);
+      console.log("Is connected?", state.isConnected);
+
+      if (state.isConnected === true) {
+        props.navigation.navigate("Main");
+      } else {
+        props.navigation.navigate("NetworkErrorScreen");
+      }
+    });
+  };
   let arr = data.map(function (d) {
     console.log(d);
     return d;
@@ -32,20 +45,22 @@ const Main = (props) => {
     <ImageBackground
       source={item.imgbg}
       borderRadius={10}
-      style={styles.renderItemView}>
+      style={styles.renderItemView}
+    >
       <TouchableOpacity
         // style={{backgroundColor : 'blue'}}
         onPress={() =>
           props.navigation.navigate(item.screen, { title: item.source })
         }
-      //onPress={() => props.navigation.navigate(item.source)}
-      //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
+        //onPress={() => props.navigation.navigate(item.source)}
+        //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
         {/*<Image source={item.img} style={styles.renderItemImage} />*/}
         <LinearGradient
-          colors={['rgba(0,0,0,0)', 'rgba(0,0,0,1)']}
-          style={styles.gradientContainer}>
-          <Text style={styles.renderItemText}>{item.services}</Text>
+          colors={["rgba(0,0,0,0)", "rgba(0,0,0,1)"]}
+          style={styles.gradientContainer}
+        >
+          <Text style={styles.renderItemText}>{item.source}</Text>
         </LinearGradient>
       </TouchableOpacity>
     </ImageBackground>
@@ -53,11 +68,11 @@ const Main = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.textHeader}>
-        <Text style={styles.topHeading1}>WELCOME TO</Text>
+        <Text style={styles.topHeading1}>Welcome To</Text>
         <Text style={styles.topHeading2}>DIGITAL SERVICES PORTAL</Text>
       </View>
       <FlatList
-        style={{ margin: 12 }}
+        style={{alignSelf:'center'}}
         data={arr}
         numColumns={3}
         renderItem={renderItem}
@@ -70,9 +85,10 @@ const Main = (props) => {
 export default Main;
 const styles = StyleSheet.create({
   container: {
-    width: width,
-    height: height,
+    // width: width,
+    // height: height,
     justifyContent: "space-between",
+    flex:1
     //margin: 10,
     // marginTop: "7%",
   },
@@ -97,41 +113,38 @@ const styles = StyleSheet.create({
   renderItemImage: {
     width: 70,
     height: 70,
-    alignSelf: "center"
+    alignSelf: "center",
   },
   renderItemText: {
     fontSize: 13,
     //fontFamily: "serif",
     color: COLOR_WHITE,
     margin: 4,
-    marginBottom: 8
+    marginBottom: 8,
   },
   topHeading1: {
     fontFamily: "sans-serif",
-    fontSize: 18,
-    fontWeight: '400',
-    color: COLOR_WHITE
+    fontSize: 15,
+    color: PAK_GOVT_YELLOW_COLOR,
   },
   topHeading2: {
     fontFamily: "sans-serif",
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: "bold",
-    color: COLOR_WHITE,
+    color: PAK_GOVT_YELLOW_COLOR,
   },
   gradientContainer: {
-    width: '100%',
+    width: "100%",
     height: "100%",
     borderRadius: 10,
-    justifyContent: 'flex-end',
-    alignItems: 'center'
+    justifyContent: "flex-end",
+    alignItems: "center",
   },
   textHeader: {
-    //margin: 8,
-    //marginTop: 40,
-    paddingTop: 40,
-    padding: 8,
-    backgroundColor: COLOR_BLUE,
-    borderBottomEndRadius: 40,
-    height: 110
-  }
+    paddingLeft: "5%",
+    backgroundColor: PAK_GOVT_GREEN_COLOR,
+    height: "15%",
+    justifyContent: "center",
+    paddingTop: "8%",
+  },
 });

@@ -14,76 +14,102 @@ import {
   utilityServicesData,
   govtInitiativesData,
   defenceDataPAF,
+  boardsResultsData,
+  railwaysData, busTicketData
 } from "../../../res/data";
 import {
   COLOR_BLACK,
   COLOR_BLUE,
-  COLOR_LIGHT_BLUE,
+  PAK_GOVT_YELLOW_COLOR,
+  COLOR_GRAY,
+  PAK_GOVT_GREEN_COLOR
 } from "../../../res/drawables";
 
 const General = (props) => {
   const { title } = props.route.params;
+  props.navigation.setOptions({ title: title });
   const [newArr, setArr] = useState([]);
   useEffect(() => {
     returnData();
   }, []);
 
-
   const returnData = () => {
     let arr = [];
     switch (title) {
-      case 'Education':
+      case "Education":
         arr = educationData.map(function (d) {
           console.log(d);
           return d;
         });
         break;
-      case 'Utility Services':
+      case "Utility Bills":
         arr = utilityServicesData.map(function (d) {
           console.log(d);
           return d;
         });
         break;
-      case 'Job':
+      case "Jobs":
         arr = jobData.map(function (d) {
           console.log(d);
           return d;
         });
         break;
-      case 'Delivery Services':
+      case "Courier Tracking":
         arr = deliveryServicesData.map(function (d) {
           console.log(d);
           return d;
         });
         break;
-      case 'Govt. Initiatives':
+      case "Govt. Initiatives":
         arr = govtInitiativesData.map(function (d) {
           console.log(d);
           return d;
         });
         break;
+      case "Board Results":
+        arr = boardsResultsData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
+      case "Railways":
+        arr = railwaysData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
+      case "Bus Tickets":
+        arr = busTicketData.map(function (d) {
+          console.log(d);
+          return d;
+        });
+        break;
       default:
-        return
+        return;
     }
-    setArr(arr)
-  }
+    setArr(arr);
+  };
 
   const renderItem = ({ item }) => (
     <View style={styles.renderItemView}>
       <TouchableOpacity
         onPress={() =>
-          props.navigation.navigate("WebViewScreen", { selected: item.uri })
+          props.navigation.navigate("WebViewScreen", {
+            selected: item.uri,
+            title: item.services,
+          })
         }
       //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
         <Image source={item.img} style={styles.renderItemImage} />
         <Text style={styles.renderItemText}>{item.services}</Text>
+        <Text style={styles.renderItemText2}>{item.sub_services}</Text>
+
       </TouchableOpacity>
     </View>
   );
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome To {title} Page.</Text>
       <FlatList
         data={newArr}
         numColumns={2}
@@ -98,26 +124,28 @@ export default General;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "space-between",
-    margin: 10,
-    marginTop: "7%",
+    alignItems: "center",
+    // margin: 10,
+   
   },
   renderItemView: {
-    backgroundColor: COLOR_LIGHT_BLUE,
-    margin: 4,
-    padding: 15,
-    marginTop: 18,
-    width: "48%",
+    // backgroundColor: COLOR_LIGHT_BLUE,
+    borderWidth: 1,
+    borderColor: PAK_GOVT_YELLOW_COLOR,
+    margin: "4%",
+    padding: "3%",
+    // marginTop: 18,
+    width: "42%",
     borderRadius: 15,
   },
   renderItemImage: { width: 70, height: 70, alignSelf: "center" },
   renderItemText: {
     fontSize: 12,
-    fontWeight: "bold",
-    fontFamily: "serif",
+    // fontWeight: "bold",
+    // fontFamily: "serif",
     color: COLOR_BLACK,
     alignSelf: "center",
-    marginTop: 10,
+    marginTop: "8%",
   },
   text: {
     fontFamily: "sans-serif-light",
@@ -126,4 +154,13 @@ const styles = StyleSheet.create({
     color: COLOR_BLUE,
     alignSelf: "center",
   },
+  renderItemText2: {
+    fontSize: 8,
+    // fontWeight: "bold",
+    // fontFamily: "serif",
+    fontStyle: "italic",
+    color: COLOR_GRAY,
+    alignSelf: "center",
+    marginTop: "4%",
+  }
 });

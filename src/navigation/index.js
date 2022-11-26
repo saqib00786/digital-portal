@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import Splash from "../screens/Splash";
 import Main from "../screens/Main";
-import { COLOR_BLUE, COLOR_WHITE } from "../../res/drawables";
+import {PAK_GOVT_GREEN_COLOR, PAK_GOVT_YELLOW_COLOR } from "../../res/drawables";
 import WebViewScreen from "../screens/WebViewScreen";
 import General from "../screens/General";
 import NetworkErrorScreen from "../screens/NetworkErrorScreen";
@@ -25,7 +25,7 @@ function Navigation() {
           name="Main"
           component={Main}
           options={{
-            headerShown : false
+            headerShown: false,
           }}
         />
         <Stack.Screen
@@ -33,14 +33,14 @@ function Navigation() {
           component={General}
           options={{
             headerTitleStyle: {
-              color: COLOR_WHITE,
+              color: PAK_GOVT_YELLOW_COLOR,
               fontFamily: "serif",
               fontWeight: "bold",
             },
             headerStyle: {
-              backgroundColor: COLOR_BLUE,
+              backgroundColor: PAK_GOVT_GREEN_COLOR,
             },
-            headerTintColor: COLOR_WHITE,
+            headerTintColor: PAK_GOVT_YELLOW_COLOR,
           }}
         />
         <Stack.Screen
@@ -48,14 +48,14 @@ function Navigation() {
           component={DropDownDefence}
           options={{
             headerTitleStyle: {
-              color: COLOR_WHITE,
+              color: PAK_GOVT_YELLOW_COLOR,
               fontFamily: "serif",
               fontWeight: "bold",
             },
             headerStyle: {
-              backgroundColor: COLOR_BLUE,
+              backgroundColor: PAK_GOVT_GREEN_COLOR,
             },
-            headerTintColor: COLOR_WHITE,
+            headerTintColor: PAK_GOVT_YELLOW_COLOR,
           }}
         />
         <Stack.Screen
@@ -63,20 +63,31 @@ function Navigation() {
           component={DropDownGovtSec}
           options={{
             headerTitleStyle: {
-              color: COLOR_WHITE,
+              color:PAK_GOVT_YELLOW_COLOR,
               fontFamily: "serif",
               fontWeight: "bold",
             },
             headerStyle: {
-              backgroundColor: COLOR_BLUE,
+              backgroundColor:  PAK_GOVT_GREEN_COLOR,
             },
-            headerTintColor: COLOR_WHITE,
+            headerTintColor:PAK_GOVT_YELLOW_COLOR
           }}
         />
         <Stack.Screen
           name="WebViewScreen"
           component={WebViewScreen}
-          options={{headerShown : false}}
+          options={{
+            headerTitleStyle: {
+              color: PAK_GOVT_YELLOW_COLOR,
+              fontFamily: "serif",
+              fontWeight: "bold",
+            },
+            headerStyle: {
+              backgroundColor:  PAK_GOVT_GREEN_COLOR,
+            },
+            headerTintColor:PAK_GOVT_YELLOW_COLOR,
+          }}
+          //options={{headerShown : false}}
         />
         <Stack.Screen
           options={{ headerShown: false }}
