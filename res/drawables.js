@@ -45,7 +45,7 @@ export const MOD_LOGO = require(PATH + "/MOD.png");
 
 //EDUCATION SCREEN LOGOS
 
-export const FBISE_LOGO = require(PATH + "/FBISE.png");
+export const FBISE_LOGO = require(PATH + "/fbise.png");
 export const HEC_LOGO = require(PATH + "/hec.png");
 export const MDCAT_LOGO = require(PATH + "/MDCAT.png");
 export const NTS_LOGO = require(PATH + "/NTS.png");
@@ -65,7 +65,7 @@ export const AJKPSC_LOGO = require(PATH + "/AJKPSC.png");
 export const PAKISTAN_POST_LOGO = require(PATH + "/PP.png");
 export const TCS_LOGO = require(PATH + "/tcs.png");
 export const LEOPARDS_LOGO = require(PATH + "/leopards.png");
-export const DHL_LOGO = require(PATH + "/DHL.png");
+export const DHL_LOGO = require(PATH + "/dhl.png");
 export const FEDEX_LOGO = require(PATH + "/FEDEX.png");
 export const M_and_P_LOGO = require(PATH + "/MP.png");
 export const CAL_COR_LOGO = require(PATH + "/CALL_COR.png");
@@ -76,7 +76,8 @@ export const POSTAL_CODES_LOGO = require(PATH + "/POST_CODES.png");
 export const EHSAAS_PROGRAM_LOGO = require(PATH + "/ehsaas_program.png");
 export const KAMYAB_JAWAN_LOGO = require(PATH + "/kamyab_jawan_logo.png");
 export const ROSHAN_DIGITAL_LOGO = require(PATH + "/roshan_digital_logo.png");
-export const PAKISTAN_CITIZEN_PORTAL_LOGO = require(PATH +"/pakistanCitizenPortal.png");
+export const PAKISTAN_CITIZEN_PORTAL_LOGO = require(PATH +
+  "/pakistanCitizenPortal.png");
 export const EROZGAR_LOGO = require(PATH + "/erozgar.png");
 export const BENAZIR_INCOME_LOGO = require(PATH + "/benazirIncome.png");
 export const E_LEARN_LOGO = require(PATH + "/e_learn.png");
