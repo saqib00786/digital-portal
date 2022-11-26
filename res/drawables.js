@@ -1,3 +1,4 @@
+// color Code
 export const BACKGROUND_COLOR = "#d3d3d3";
 export const COLOR_WHITE = "#ffffff";
 export const COLOR_BLACK = "#000000";
