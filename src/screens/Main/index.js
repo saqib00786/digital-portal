@@ -16,6 +16,7 @@ import {
   PAK_GOVT_YELLOW_COLOR,
 } from "../../../res/drawables";
 import NetInfo from "@react-native-community/netinfo";
+import { setStatusBarBackgroundColor } from "expo-status-bar";
 
 const { height, width } = Dimensions.get("window");
 
@@ -23,6 +24,8 @@ const Main = (props) => {
   useEffect(() => {
     connectionChecking();
   }, []);
+
+  setStatusBarBackgroundColor(PAK_GOVT_GREEN_COLOR)
 
   const connectionChecking = () => {
     return NetInfo.addEventListener((state) => {
@@ -52,8 +55,8 @@ const Main = (props) => {
         onPress={() =>
           props.navigation.navigate(item.screen, { title: item.source })
         }
-        //onPress={() => props.navigation.navigate(item.source)}
-        //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
+      //onPress={() => props.navigation.navigate(item.source)}
+      //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
         {/*<Image source={item.img} style={styles.renderItemImage} />*/}
         <LinearGradient
@@ -72,7 +75,7 @@ const Main = (props) => {
         <Text style={styles.topHeading2}>DIGITAL SERVICES PORTAL</Text>
       </View>
       <FlatList
-        style={{alignSelf:'center'}}
+        style={{ alignSelf: 'center' }}
         data={arr}
         numColumns={3}
         renderItem={renderItem}
@@ -88,7 +91,7 @@ const styles = StyleSheet.create({
     // width: width,
     // height: height,
     justifyContent: "space-between",
-    flex:1
+    flex: 1
     //margin: 10,
     // marginTop: "7%",
   },
