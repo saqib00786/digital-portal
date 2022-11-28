@@ -134,7 +134,7 @@ export const PK_BUSES_LOGO = require(PATH + "/PK_BUSES.png");
 export const BILAL_TRAVELS_LOGO = require(PATH + "/BILAL_TRAVELS.png");
 
 //MAIN SCREEN MODIFIED LOGOS
-export const EDU_BG = require(PATH + "/edu.png");
+export const EDU_BG = require(PATH + "/EDU_BGI.png");
 export const DEF_BG = require(PATH + "/defense.png");
 export const GOVT_BG = require(PATH + "/govt_sectors.png");
 export const JOBS_BG = require(PATH + "/jobs.png");
