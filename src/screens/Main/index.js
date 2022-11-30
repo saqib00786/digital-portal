@@ -1,5 +1,5 @@
 import { LinearGradient } from "expo-linear-gradient";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -20,18 +20,21 @@ import NetInfo from "@react-native-community/netinfo";
 const { height, width } = Dimensions.get("window");
 
 const Main = (props) => {
+  const [isOffline, setIsOffline] = useState(false);
   useEffect(() => {
     connectionChecking();
   }, []);
 
   const connectionChecking = () => {
-    return NetInfo.addEventListener((state) => {
+    NetInfo.addEventListener((state) => {
       console.log("Connection type Main:", state.type);
       console.log("Is connected?", state.isConnected);
 
-      if (state.isConnected === true) {
+      if (state.isConnected) {
+        setIsOffline(false);
         props.navigation.navigate("Main");
       } else {
+        setIsOffline(true);
         props.navigation.navigate("NetworkErrorScreen");
       }
     });
@@ -71,13 +74,17 @@ const Main = (props) => {
         <Text style={styles.topHeading1}>Welcome To</Text>
         <Text style={styles.topHeading2}>DIGITAL SERVICES PORTAL</Text>
       </View>
-      <FlatList
-        style={{alignSelf:'center'}}
-        data={arr}
-        numColumns={3}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.id}
-      />
+      {!isOffline ? (
+        <FlatList
+          style={{ alignSelf: "center" }}
+          data={arr}
+          numColumns={3}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.id}
+        />
+      ) : (
+        <Text style={styles.message}>No Internet!</Text>
+      )}
     </View>
   );
 };
@@ -88,7 +95,7 @@ const styles = StyleSheet.create({
     // width: width,
     // height: height,
     justifyContent: "space-between",
-    flex:1
+    flex: 1,
     //margin: 10,
     // marginTop: "7%",
   },
@@ -146,5 +153,14 @@ const styles = StyleSheet.create({
     height: "15%",
     justifyContent: "center",
     paddingTop: "8%",
+  },
+  message: {
+    alignSelf: "center",
+    //justifyContent: "center",
+    fontFamily: "sans-serif",
+    fontSize: 20,
+    fontWeight: "bold",
+    color: PAK_GOVT_GREEN_COLOR,
+    marginBottom: "70%",
   },
 });
