@@ -16,6 +16,7 @@ import {
   PAK_GOVT_YELLOW_COLOR,
 } from "../../../res/drawables";
 import NetInfo from "@react-native-community/netinfo";
+import { setStatusBarBackgroundColor } from "expo-status-bar";
 
 const { height, width } = Dimensions.get("window");
 
@@ -25,8 +26,10 @@ const Main = (props) => {
     connectionChecking();
   }, []);
 
+  setStatusBarBackgroundColor(PAK_GOVT_GREEN_COLOR);
+
   const connectionChecking = () => {
-    NetInfo.addEventListener((state) => {
+    return NetInfo.addEventListener((state) => {
       console.log("Connection type Main:", state.type);
       console.log("Is connected?", state.isConnected);
 
@@ -156,7 +159,6 @@ const styles = StyleSheet.create({
   },
   message: {
     alignSelf: "center",
-    //justifyContent: "center",
     fontFamily: "sans-serif",
     fontSize: 20,
     fontWeight: "bold",

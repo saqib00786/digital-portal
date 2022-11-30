@@ -71,37 +71,37 @@ export const data = [
 //GOVERNMENT INITIATIVES SERVICES SCREEN DATA
 export const govtInitiativesData = [
   {
-    services: "EHSAAS PROGRAM",
+    services: "Ehsaas Program",
     img: EHSAAS_PROGRAM_LOGO,
     uri: "https://ehsaasprogramme.pk/",
   },
   {
-    services: "KAMYAB JAWAN",
+    services: "Kamyab Jawan",
     img: KAMYAB_JAWAN_LOGO,
     uri: "https://pmyp.gov.pk/#",
   },
   {
-    services: "ROSHAN DIGITAL ACCOUNT",
+    services: "Roshan Digital Account",
     img: ROSHAN_DIGITAL_LOGO,
     uri: "https://www.sbp.org.pk/rda/index.html",
   },
   {
-    services: "PAKISTAN CITIZEN PORTAL",
+    services: "Pakistan Citizen Portal",
     img: PAKISTAN_CITIZEN_PORTAL_LOGO,
     uri: "https://citizenportal.gov.pk/",
   },
   {
-    services: "E-ROZGAR",
+    services: "e-Rozgaar",
     img: EROZGAR_LOGO,
     uri: "https://www.erozgaar.pitb.gov.pk/",
   },
   {
-    services: "BENAZIR INCOME SUPPORT PROGRAM",
+    services: "Benazir Income Support Program",
     img: BENAZIR_INCOME_LOGO,
     uri: "https://www.bisp.gov.pk/",
   },
   {
-    services: "E-LEARN",
+    services: "e-Learn",
     img: E_LEARN_LOGO,
     uri: "https://www.elearn.gov.pk/",
   },
@@ -417,7 +417,7 @@ export const govtSecDriving = [
     value: "KPK",
     key: "https://www.dlimskpk-gov.com/",
   },
-  { value: "SINDH", key: "https://dls.gos.pk/" },
+  { value: "Sindh", key: "https://dls.gos.pk/" },
   { value: "Balochistan", key: "https://www.dlims-balochistan.org/" },
 ];
 export const govtSecExciseTaxation = [
@@ -682,7 +682,7 @@ export const busTicketData = [
   {
     services: "Sasta Ticket",
     img: SASTITICKET_LOGO,
-    uri: "https://www.bookkaru.com/",
+    uri: "https://www.sastaticket.pk/bus",
   },
   {
     services: "Easy Tickets",
