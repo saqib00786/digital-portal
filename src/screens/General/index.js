@@ -121,12 +121,12 @@ const General = (props) => {
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
-      {/* <View style={styles.adds}>
+      <View style={styles.adds}>
         <BannerAd
-          unitId="ca-app-pub-1546920848155013/3194669271"
+          unitId={TestIds.BANNER}
           size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
         />
-      </View> */}
+      </View>
     </View>
   );
 };
