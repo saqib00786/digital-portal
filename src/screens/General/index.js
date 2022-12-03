@@ -15,15 +15,21 @@ import {
   govtInitiativesData,
   defenceDataPAF,
   boardsResultsData,
-  railwaysData, busTicketData
+  railwaysData,
+  busTicketData,
 } from "../../../res/data";
 import {
   COLOR_BLACK,
   COLOR_BLUE,
   PAK_GOVT_YELLOW_COLOR,
   COLOR_GRAY,
-  PAK_GOVT_GREEN_COLOR
+  PAK_GOVT_GREEN_COLOR,
 } from "../../../res/drawables";
+import {
+  BannerAd,
+  BannerAdSize,
+  TestIds,
+} from "react-native-google-mobile-ads";
 
 const General = (props) => {
   const { title } = props.route.params;
@@ -99,12 +105,11 @@ const General = (props) => {
             title: item.services,
           })
         }
-      //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
+        //style={{ backgroundColor: "white", margin: -7, borderRadius: 10 }}
       >
         <Image source={item.img} style={styles.renderItemImage} />
         <Text style={styles.renderItemText}>{item.services}</Text>
         <Text style={styles.renderItemText2}>{item.sub_services}</Text>
-
       </TouchableOpacity>
     </View>
   );
@@ -116,6 +121,12 @@ const General = (props) => {
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
+      {/* <View style={styles.adds}>
+        <BannerAd
+          unitId="ca-app-pub-1546920848155013/3194669271"
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+        />
+      </View> */}
     </View>
   );
 };
@@ -126,7 +137,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     // margin: 10,
-   
   },
   renderItemView: {
     // backgroundColor: COLOR_LIGHT_BLUE,
@@ -162,5 +172,12 @@ const styles = StyleSheet.create({
     color: COLOR_GRAY,
     alignSelf: "center",
     marginTop: "4%",
-  }
+  },
+  adds: {
+    width: "100%",
+    height: 60,
+    position: "absolute",
+    bottom: 0,
+    zIndex: 1,
+  },
 });

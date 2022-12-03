@@ -17,6 +17,11 @@ import {
 } from "../../../res/drawables";
 import NetInfo from "@react-native-community/netinfo";
 import { setStatusBarBackgroundColor } from "expo-status-bar";
+import {
+  BannerAd,
+  BannerAdSize,
+  TestIds,
+} from "react-native-google-mobile-ads";
 
 const { height, width } = Dimensions.get("window");
 
@@ -88,6 +93,12 @@ const Main = (props) => {
       ) : (
         <Text style={styles.message}>No Internet!</Text>
       )}
+      {/* <View style={styles.adds}>
+        <BannerAd
+          unitId="ca-app-pub-1546920848155013/3956877179"
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+        />
+      </View> */}
     </View>
   );
 };
@@ -164,5 +175,12 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: PAK_GOVT_GREEN_COLOR,
     marginBottom: "70%",
+  },
+  adds: {
+    width: "100%",
+    height: 60,
+    position: "absolute",
+    bottom: 0,
+    zIndex: 1,
   },
 });

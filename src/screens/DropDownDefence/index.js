@@ -15,6 +15,11 @@ import {
   POLICE_LOGO,
 } from "../../../res/drawables";
 import DropList from "../../Components/DropList";
+import {
+  BannerAd,
+  BannerAdSize,
+  TestIds,
+} from "react-native-google-mobile-ads";
 
 const DropDownDefence = (props) => {
   const [selected, setSelected] = React.useState("");
@@ -46,45 +51,53 @@ const DropDownDefence = (props) => {
   };
 
   return (
-    <ScrollView>
-      <View style={styles.container}>
-        <DropList
-          title={"Pakistan Army"}
-          logo={ARMY_LOGO}
-          setSelected={setSelected}
-          data={arr}
-          onSelect={() => nav(selected, "Army")}
+    <>
+      <ScrollView>
+        <View style={styles.container}>
+          <DropList
+            title={"Pakistan Army"}
+            logo={ARMY_LOGO}
+            setSelected={setSelected}
+            data={arr}
+            onSelect={() => nav(selected, "Army")}
+          />
+          <DropList
+            title={"Pakistan Air Force"}
+            logo={AIRFORCE_LOGO}
+            setSelected={setSelected}
+            data={arr1}
+            onSelect={() => nav(selected, "PAF")}
+          />
+          <DropList
+            title={"Pakistan Navy"}
+            logo={NAVY_LOGO}
+            setSelected={setSelected}
+            data={arr2}
+            onSelect={() => nav(selected, "NAVY")}
+          />
+          <DropList
+            title={"Police"}
+            logo={POLICE_LOGO}
+            setSelected={setSelected}
+            data={arr3}
+            onSelect={() => nav(selected, "POLICE")}
+          />
+          <DropList
+            title={"Ministry of Defence"}
+            logo={MOD_LOGO}
+            setSelected={setSelected}
+            data={arr4}
+            onSelect={() => nav(selected, "MOD")}
+          />
+        </View>
+      </ScrollView>
+      {/* <View style={styles.adds}>
+        <BannerAd
+          unitId="ca-app-pub-1546920848155013/3194669271"
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
         />
-        <DropList
-          title={"Pakistan Air Force"}
-          logo={AIRFORCE_LOGO}
-          setSelected={setSelected}
-          data={arr1}
-          onSelect={() => nav(selected, "PAF")}
-        />
-        <DropList
-          title={"Pakistan Navy"}
-          logo={NAVY_LOGO}
-          setSelected={setSelected}
-          data={arr2}
-          onSelect={() => nav(selected, "NAVY")}
-        />
-        <DropList
-          title={"Police"}
-          logo={POLICE_LOGO}
-          setSelected={setSelected}
-          data={arr3}
-          onSelect={() => nav(selected, "POLICE")}
-        />
-        <DropList
-          title={"Ministry of Defence"}
-          logo={MOD_LOGO}
-          setSelected={setSelected}
-          data={arr4}
-          onSelect={() => nav(selected, "MOD")}
-        />
-      </View>
-    </ScrollView>
+      </View> */}
+    </>
   );
 };
 
@@ -92,6 +105,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     margin: 20,
+  },
+  adds: {
+    width: "100%",
+    height: 60,
+    position: "absolute",
+    bottom: 0,
+    zIndex: 1,
   },
 });
 

@@ -21,6 +21,11 @@ import {
   VISA_LOGO,
 } from "../../../res/drawables";
 import DropList from "../../Components/DropList";
+import {
+  BannerAd,
+  BannerAdSize,
+  TestIds,
+} from "react-native-google-mobile-ads";
 
 const DropDownGovtSec = (props) => {
   const [selected, setSelected] = React.useState("");
@@ -65,73 +70,90 @@ const DropDownGovtSec = (props) => {
   //   props.navigation.navigate("We",{})
   // }
   return (
-    <ScrollView>
-      <View style={styles.container}>
-        <DropList
-          title={"Driving License"}
-          logo={DRIVING_LICENSE_LOGO}
-          setSelected={setSelected}
-          data={arr}
-          onSelect={() => nav(selected, "Driving License")}
+    <>
+      <ScrollView>
+        <View style={styles.container}>
+          <DropList
+            title={"Driving License"}
+            logo={DRIVING_LICENSE_LOGO}
+            setSelected={setSelected}
+            data={arr}
+            onSelect={() => nav(selected, "Driving License")}
+          />
+          <DropList
+            title={"Excise,Tax & Narcotics Control Dept"}
+            logo={EXCISE_TAX_LOGO}
+            setSelected={setSelected}
+            data={arr1}
+            onSelect={() =>
+              nav(selected, "Excise,Tax & Narcotics Control Dept")
+            }
+          />
+          <DropList
+            title={"Nadra"}
+            logo={NADRA_LOGO}
+            setSelected={setSelected}
+            data={arr2}
+            onSelect={() => nav(selected, "Nadra")}
+          />
+          <DropList
+            title={"Passport"}
+            logo={PASSPORT_LOGO}
+            setSelected={setSelected}
+            data={arr3}
+            onSelect={() => nav(selected, "Passport")}
+          />
+          <DropList
+            title={"Pakistan Visa Application"}
+            logo={VISA_LOGO}
+            setSelected={setSelected}
+            data={arr4}
+            onSelect={() => nav(selected, "Pakistan Visa Application")}
+          />
+          <DropList
+            title={"MOFA"}
+            logo={MOFA_LOGO}
+            setSelected={setSelected}
+            data={arr5}
+            onSelect={() => nav(selected, "MOFA")}
+          />
+          <DropList
+            title={"FBR"}
+            logo={FBR_LOGO}
+            setSelected={setSelected}
+            data={arr6}
+            onSelect={() => nav(selected, "FBR")}
+          />
+          <DropList
+            title={"Custom"}
+            logo={CUSTOM_LOGO}
+            setSelected={setSelected}
+            data={arr7}
+            onSelect={() => nav(selected, "Custom")}
+          />
+        </View>
+      </ScrollView>
+      {/* <View style={styles.adds}>
+        <BannerAd
+          unitId="ca-app-pub-1546920848155013/3194669271"
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
         />
-        <DropList
-          title={"Excise,Tax & Narcotics Control Dept"}
-          logo={EXCISE_TAX_LOGO}
-          setSelected={setSelected}
-          data={arr1}
-          onSelect={() => nav(selected, "Excise,Tax & Narcotics Control Dept")}
-        />
-        <DropList
-          title={"Nadra"}
-          logo={NADRA_LOGO}
-          setSelected={setSelected}
-          data={arr2}
-          onSelect={() => nav(selected, "Nadra")}
-        />
-        <DropList
-          title={"Passport"}
-          logo={PASSPORT_LOGO}
-          setSelected={setSelected}
-          data={arr3}
-          onSelect={() => nav(selected, "Passport")}
-        />
-        <DropList
-          title={"Pakistan Visa Application"}
-          logo={VISA_LOGO}
-          setSelected={setSelected}
-          data={arr4}
-          onSelect={() => nav(selected, "Pakistan Visa Application")}
-        />
-        <DropList
-          title={"MOFA"}
-          logo={MOFA_LOGO}
-          setSelected={setSelected}
-          data={arr5}
-          onSelect={() => nav(selected, "MOFA")}
-        />
-        <DropList
-          title={"FBR"}
-          logo={FBR_LOGO}
-          setSelected={setSelected}
-          data={arr6}
-          onSelect={() => nav(selected, "FBR")}
-        />
-        <DropList
-          title={"Custom"}
-          logo={CUSTOM_LOGO}
-          setSelected={setSelected}
-          data={arr7}
-          onSelect={() => nav(selected, "Custom")}
-        />
-      </View>
-    </ScrollView>
+      </View> */}
+    </>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: '3%', 
+    margin: "3%",
+  },
+  adds: {
+    width: "100%",
+    height: 60,
+    position: "absolute",
+    bottom: 0,
+    zIndex: 1,
   },
 });
 
