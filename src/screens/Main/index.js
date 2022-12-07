@@ -9,6 +9,7 @@ import {
   ImageBackground,
   Dimensions,
 } from "react-native";
+import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 import { data } from "../../../res/data";
 import {
   COLOR_WHITE,
