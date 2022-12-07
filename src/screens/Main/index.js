@@ -95,7 +95,7 @@ const Main = (props) => {
       )}
       <View style={styles.adds}>
         <BannerAd
-          unitId={TestIds.BANNER}
+          unitId='ca-app-pub-7992663111948996/5364535029'
           size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
         />
       </View>
@@ -164,9 +164,9 @@ const styles = StyleSheet.create({
   textHeader: {
     paddingLeft: "5%",
     backgroundColor: PAK_GOVT_GREEN_COLOR,
-    height: "15%",
+    height: "10%",
     justifyContent: "center",
-    paddingTop: "8%",
+    paddingTop: "2%",
   },
   message: {
     alignSelf: "center",
